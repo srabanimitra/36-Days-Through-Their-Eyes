@@ -1,0 +1,16 @@
+[
+    {
+        "id": "student",
+        "name": "Student",
+        "icon": "GraduationCap",
+        "description": "A public university student caught between fear and conviction.",
+        "chaptersAvailable": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+        ]
+    }
+]

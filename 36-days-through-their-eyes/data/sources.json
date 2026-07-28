@@ -1,0 +1,15 @@
+[
+    {
+        "id": "source-001",
+        "title": "Article title",
+        "publisher": "The Daily Star",
+        "date": "2024-07-15",
+        "url": "https://...",
+        "relatedDates": [
+            "jun-05"
+        ],
+        "relatedPeople": [
+            "abu-sayed"
+        ]
+    }
+]

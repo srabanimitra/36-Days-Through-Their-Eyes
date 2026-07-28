@@ -1,0 +1,23 @@
+[
+    {
+        "id": "jun-05",
+        "date": "2024-06-05",
+        "label": "June 5",
+        "title": "The Verdict",
+        "chapterId": 0,
+        "summary": "High Court reinstates the quota system, reigniting protests.",
+        "location": {
+            "name": "Dhaka",
+            "lat": 23.8103,
+            "lng": 90.4125
+        },
+        "charactersInvolved": [
+            "student",
+            "journalist"
+        ],
+        "sources": [
+            "source-001",
+            "source-002"
+        ]
+    }
+]
