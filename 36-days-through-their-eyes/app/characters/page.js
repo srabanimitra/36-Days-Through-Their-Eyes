@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { motion } from "framer-motion";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { ArrowLeft, ArrowRight, GraduationCap, Camera, Bike, Check } from "lucide-react";
 import characters from "@/data/characters.json";
 import { setCharacter } from "@/lib/character";
@@ -40,7 +41,7 @@ export default function Characters() {
           Whose eyes will you see through?
         </h1>
         <p className="font-body text-sm sm:text-base" style={{ color: "var(--color-text-secondary)" }}>
-          The 36 days are the same for everyone. What differs is how they're lived.
+          The 36 days are the same for everyone. What differs is how they are lived.
         </p>
       </motion.div>
 

@@ -1,23 +1,288 @@
 [
     {
-        "id": "jun-05",
+        "node_id": "n01",
         "date": "2024-06-05",
-        "label": "June 5",
-        "title": "The Verdict",
-        "chapterId": 0,
-        "summary": "High Court reinstates the quota system, reigniting protests.",
-        "location": {
-            "name": "Dhaka",
-            "lat": 23.8103,
-            "lng": 90.4125
-        },
-        "charactersInvolved": [
-            "student",
-            "journalist"
-        ],
-        "sources": [
-            "source-001",
-            "source-002"
-        ]
+        "day_label": "The Verdict",
+        "historical_event": "The High Court Division struck down a 2018 government circular, reinstating a 30% civil-service quota for descendants of 1971 freedom fighters. Students at six universities held peaceful protests against the ruling the same day, seeing it as a threat to merit-based hiring.",
+        "source_1_name": "The Daily Star",
+        "source_1_url": "https://www.thedailystar.net/news/bangladesh/justice/news/hc-verdict-quota",
+        "source_2_name": "Wikipedia — Timeline of July Revolution",
+        "source_2_url": "https://en.wikipedia.org/wiki/Timeline_of_July_Revolution_(Bangladesh)",
+        "confirmed_by_2_sources": "Y"
+    },
+    {
+        "node_id": "n02",
+        "date": "2024-06-06/2024-06-30",
+        "day_label": "Eid Pause, Then Regrouping",
+        "historical_event": "Street action quieted as the country observed Eid al-Adha, but student networks kept organizing behind the scenes, coordinating a national platform for when the holiday break ended. No single distinct public event is separately documented for this stretch, which is why it is the one range left uncompressed on this timeline.",
+        "source_1_name": "Wikipedia — Timeline of July Revolution",
+        "source_1_url": "https://en.wikipedia.org/wiki/Timeline_of_July_Revolution_(Bangladesh)",
+        "source_2_name": "",
+        "source_2_url": "",
+        "confirmed_by_2_sources": "N"
+    },
+    {
+        "node_id": "n03",
+        "date": "2024-07-01",
+        "day_label": "Formation of the Anti-Discrimination Student Movement",
+        "historical_event": "Students under a new, non-partisan platform launched coordinated protests across Dhaka and other cities, issuing a four-point demand for quota reform. Class and exam boycotts began at public universities the same day.",
+        "source_1_name": "Reuters",
+        "source_1_url": "https://www.reuters.com/world/asia-pacific/students-protest-reinstate-2024-07-02/",
+        "source_2_name": "Wikipedia — July Uprising",
+        "source_2_url": "https://en.wikipedia.org/wiki/July_Uprising",
+        "confirmed_by_2_sources": "Y"
+    },
+    {
+        "node_id": "n04",
+        "date": "2024-07-07",
+        "day_label": "The Bangla Blockade Begins",
+        "historical_event": "Demonstrators shut down key intersections in Dhaka, most notably Shahbagh, and disrupted highways and rail lines nationwide in what organizers called the Bangla Blockade. Long-distance buses and trains were halted for hours as the protest spread beyond Dhaka University to other campuses.",
+        "source_1_name": "The Daily Star",
+        "source_1_url": "https://www.thedailystar.net/news/bangladesh/blockade-students-block-roads",
+        "source_2_name": "The Business Standard",
+        "source_2_url": "https://www.tbsnews.net/bangladesh/education/quota-protest-students-boycott-class-exams-prepare-nationwide-bangla-blockade",
+        "confirmed_by_2_sources": "Y"
+    },
+    {
+        "node_id": "n05",
+        "date": "2024-07-10",
+        "day_label": "Supreme Court Freezes the Ruling",
+        "historical_event": "The Appellate Division of the Supreme Court issued a four-week status quo order, temporarily freezing the High Court's quota restoration while it considered the case further. Protesters rejected this as insufficient, arguing a temporary freeze was no substitute for a permanent legislative fix.",
+        "source_1_name": "Bdnews24.com",
+        "source_1_url": "https://bdnews24.com/bangladesh/",
+        "source_2_name": "Dhaka Tribune",
+        "source_2_url": "https://www.dhakatribune.com/bangladesh/dhaka/351603/anti-quota-activists-gather-at-dhaka-university",
+        "confirmed_by_2_sources": "Y"
+    },
+    {
+        "node_id": "n06",
+        "date": "2024-07-12",
+        "day_label": "Blockade, Day Three",
+        "historical_event": "Students returned to Shahbagh for a third consecutive round of blockading, undeterred by the court's temporary freeze. The demonstration underlined that the movement's demands had shifted from a single judicial win toward a broader, sustained campaign.",
+        "source_1_name": "Dhaka Tribune",
+        "source_1_url": "https://www.dhakatribune.com/bangladesh/dhaka/351867/quota-reform-students-again-block-shahbagh",
+        "source_2_name": "",
+        "source_2_url": "",
+        "confirmed_by_2_sources": "N"
+    },
+    {
+        "node_id": "n07",
+        "date": "2024-07-14",
+        "day_label": "The \"Razakar\" Remark and the Midnight Protest",
+        "historical_event": "At a press conference, Prime Minister Sheikh Hasina questioned whether job benefits should go to freedom fighters' grandchildren or to descendants of wartime collaborators, a remark protesters heard as branding them traitors. Dhaka University students, including women who broke a dormitory lockdown at Rokeya Hall, poured into the campus after midnight chanting slogans that reclaimed the insult. Students had also submitted a formal memorandum to the President earlier the same day.",
+        "source_1_name": "BBC News",
+        "source_1_url": "https://www.bbc.com/news",
+        "source_2_name": "Prothom Alo",
+        "source_2_url": "https://www.prothomalo.com/bangladesh/cvkgobtzd5",
+        "confirmed_by_2_sources": "Y"
+    },
+    {
+        "node_id": "n08",
+        "date": "2024-07-15",
+        "day_label": "Chhatra League Violence at Dhaka University",
+        "historical_event": "Armed activists from the ruling party's student wing attacked peaceful protesters at Dhaka University with sticks, iron rods and firearms, injuring more than 300 people, while police stood by or assisted. The same day saw coordinated attacks at Chittagong, Rajshahi and Jahangirnagar Universities, and the government cut mobile internet around the Dhaka University campus.",
+        "source_1_name": "OHCHR Fact-Finding Report",
+        "source_1_url": "https://unipd-centrodirittiumani.it/fftb-hr-violations-bd.pdf",
+        "source_2_name": "The Daily Star",
+        "source_2_url": "https://www.thedailystar.net/news/bangladesh/crime-justice/news/bcl-unleashes-fury-quota-protesters-3657866",
+        "confirmed_by_2_sources": "Y"
+    },
+    {
+        "node_id": "n09",
+        "date": "2024-07-16",
+        "day_label": "Abu Sayed Is Killed; the Movement Turns Fatal",
+        "historical_event": "Police shot and killed unarmed student coordinator Abu Sayed at point-blank range outside Begum Rokeya University in Rangpur; video of his death spread nationwide within hours. Six people died in clashes that day overall, and by evening the government ordered every school, college and university in the country closed indefinitely.",
+        "source_1_name": "Amnesty International",
+        "source_1_url": "https://www.amnesty.org/en/",
+        "source_2_name": "The Daily Star",
+        "source_2_url": "https://www.thedailystar.net/news/bangladesh/news/student-rangpur-killed-during-clash-between-police-and-protesters-3658216",
+        "confirmed_by_2_sources": "Y"
+    },
+    {
+        "node_id": "n10",
+        "date": "2024-07-17",
+        "day_label": "Dormitory Evictions and a Funeral Turns Violent",
+        "historical_event": "Police forcibly cleared university residence halls overnight using tear gas and stun grenades after the government ordered students to vacate; Sheikh Hasina addressed the nation offering condolences even as the evictions proceeded. A symbolic funeral prayer held that day for six students killed on July 16 ended in fresh clashes with police.",
+        "source_1_name": "Prothom Alo",
+        "source_1_url": "https://en.prothomalo.com/",
+        "source_2_name": "The Daily Ittefaq",
+        "source_2_url": "https://www.ittefaq.com.bd/693997",
+        "confirmed_by_2_sources": "Y"
+    },
+    {
+        "node_id": "n11",
+        "date": "2024-07-18",
+        "day_label": "\"Complete Shutdown\" and the Internet Goes Dark",
+        "historical_event": "A nationwide 'Complete Shutdown' brought heavy street clashes, protesters set fire to the state television headquarters, and the Mirpur-10 metro station was damaged by arson. Late that evening the government cut mobile broadband and home internet across the entire country, a blackout that would last roughly ten days.",
+        "source_1_name": "Reuters",
+        "source_1_url": "https://www.reuters.com/world/asia-pacific/protesters-call-complete-shutdown-2024-07-18/",
+        "source_2_name": "France 24",
+        "source_2_url": "https://www.france24.com/en/asia-pacific/20240718-state-tv-hq-set-ablaze-death-toll-rises-student-protests-roil-bangladesh",
+        "confirmed_by_2_sources": "Y"
+    },
+    {
+        "node_id": "n12",
+        "date": "2024-07-19",
+        "day_label": "Curfew and Shoot-at-Sight Orders",
+        "historical_event": "Police fired live ammunition at crowds in Jatrabari, Rampura and Uttara as clashes turned deadly across Dhaka; in Narsingdi, protesters stormed a prison and freed hundreds of inmates. The government declared a nationwide curfew from midnight and authorized shoot-at-sight orders while deploying the army into the streets.",
+        "source_1_name": "OHCHR Fact-Finding Report",
+        "source_1_url": "https://unipd-centrodirittiumani.it/fftb-hr-violations-bd.pdf",
+        "source_2_name": "Anadolu Agency",
+        "source_2_url": "https://www.aa.com.tr/en/asia-pacific/curfew-imposed-military-deployed-as-death-toll-in-student-protests-climbs-to-75-in-bangladesh/3280318",
+        "confirmed_by_2_sources": "Y"
+    },
+    {
+        "node_id": "n13",
+        "date": "2024-07-20",
+        "day_label": "Army Patrols and a Coordinator Disappears",
+        "historical_event": "Soldiers patrolled a largely empty, curfew-bound Dhaka while police carried out night raids and mass arrests of protest organizers. Central coordinator Nahid Islam was taken from a friend's house during the night, held and reportedly tortured in unknown custody, then released the following day.",
+        "source_1_name": "The Daily Star",
+        "source_1_url": "https://www.thedailystar.net/news/bangladesh/2024-between-fear-and-defiance",
+        "source_2_name": "BBC Bengali",
+        "source_2_url": "https://www.bbc.com/bengali/articles/cne48jd942po",
+        "confirmed_by_2_sources": "Y"
+    },
+    {
+        "node_id": "n14",
+        "date": "2024-07-21",
+        "day_label": "Supreme Court Cuts Quotas to 7%",
+        "historical_event": "The Appellate Division scaled the contested quota back sharply, to 7% of posts overall, leaving 93% of civil-service jobs open on merit. Student organizers called the ruling a partial win but paused street protests for only 48 hours, insisting on accountability for the deaths already caused by the crackdown.",
+        "source_1_name": "Al Jazeera",
+        "source_1_url": "https://www.aljazeera.com/news/2024/7/16/whats-behind-bangladeshs-violent-quota-protests",
+        "source_2_name": "The Times of India",
+        "source_2_url": "https://timesofindia.indiatimes.com/world/south-asia/bangladesh-quota-row-students-pause-protest-for-48-hour-demand-govt-to-lift-curfew/articleshow/111925041.cms",
+        "confirmed_by_2_sources": "Y"
+    },
+    {
+        "node_id": "n15",
+        "date": "2024-07-24",
+        "day_label": "Broadband Returns, Curfew Loosens",
+        "historical_event": "With protests paused, the government allowed broadband internet to come back online for banks, exporters and select sectors after a five-day nationwide shutdown, and eased curfew hours so factories and offices could reopen. Mobile data, however, stayed cut for several more days.",
+        "source_1_name": "Reuters",
+        "source_1_url": "https://www.reuters.com/world/asia-pacific/bangladesh-partially-restores-telecommunication-services-protests-taper-off-2024-07-24/",
+        "source_2_name": "Bdnews24.com",
+        "source_2_url": "https://bdnews24.com/bangladesh/a8f6d9dab5f0",
+        "confirmed_by_2_sources": "Y"
+    },
+    {
+        "node_id": "n16",
+        "date": "2024-07-26",
+        "day_label": "Hospital Abduction of Movement Coordinators",
+        "historical_event": "Detective Branch police removed three hospitalized, injured coordinators — Nahid Islam, Asif Mahmud and Abu Baker Majumder — directly from their beds into custody. The move, framed by officials as protective, drew immediate domestic and international condemnation as illegal detention.",
+        "source_1_name": "Bdnews24.com",
+        "source_1_url": "https://bdnews24.com/bangladesh/",
+        "source_2_name": "Al Jazeera",
+        "source_2_url": "https://www.aljazeera.com/news/2024/7/27/bangladesh-authorities-detain-student-protest-leaders-in-hospital",
+        "confirmed_by_2_sources": "Y"
+    },
+    {
+        "node_id": "n17",
+        "date": "2024-07-27",
+        "day_label": "Two More Coordinators Detained",
+        "historical_event": "A day after the hospital detentions, Detective Branch officers took two more coordinators, Sarjis Alam and Hasnat Abdullah, citing an alleged connection to opposition figures. In response, the wider movement threatened to resume full protests if the six detained coordinators were not released by July 29.",
+        "source_1_name": "The Business Standard",
+        "source_1_url": "https://www.tbsnews.net/bangladesh/crime/now-quota-protest-coordinators-sarjis-hasnat-taken-db-custody-security-reasons",
+        "source_2_name": "The Hindu",
+        "source_2_url": "https://www.thehindu.com/news/international/bangladesh-student-group-vows-to-resume-protests-if-demands-not-met/article68456310.ece",
+        "confirmed_by_2_sources": "Y"
+    },
+    {
+        "node_id": "n18",
+        "date": "2024-07-28",
+        "day_label": "A Forced Statement From DB Custody",
+        "historical_event": "Mobile internet was restored after roughly ten days offline, but the same day, the six detained coordinators appeared from the Detective Branch office to announce they were withdrawing the protests. Other organizers immediately said the statement had been coerced and vowed to keep the movement alive without them.",
+        "source_1_name": "Prothom Alo",
+        "source_1_url": "https://en.prothomalo.com/bangladesh/1a5pu53bbq",
+        "source_2_name": "The Daily Observer",
+        "source_2_url": "https://www.observerbd.com/news.php?id=482527",
+        "confirmed_by_2_sources": "Y"
+    },
+    {
+        "node_id": "n19",
+        "date": "2024-07-29",
+        "day_label": "Protests Resume; Mass Arrests Continue",
+        "historical_event": "After the government let a release ultimatum for the coordinators lapse, protesters returned to the streets nationwide despite the risk, and police arrested nearly 2,800 people in Dhaka alone. The same day, university teachers across the country held an Anti-Repression Rally at Dhaka University demanding an end to the crackdown.",
+        "source_1_name": "Jamuna Television",
+        "source_1_url": "https://www.jagonews24.com/en/national/news/75779",
+        "source_2_name": "CNA",
+        "source_2_url": "https://www.channelnewsasia.com/asia/bangladesh-protests-resume-after-ultimatum-ignored-curfew-sheikh-hasina-4511596",
+        "confirmed_by_2_sources": "Y"
+    },
+    {
+        "node_id": "n20",
+        "date": "2024-07-30",
+        "day_label": "Red July",
+        "historical_event": "The government declared a national mourning day for those killed in the crackdown, and ruling-party officials marked it with black profile pictures online. Much of the public rejected the official framing outright, switching their own profile photos to red instead, a visible mass refusal to accept state-sanctioned grief without accountability.",
+        "source_1_name": "Jago News 24",
+        "source_1_url": "https://www.jagonews24.com/en/national/news/75805",
+        "source_2_name": "RTV",
+        "source_2_url": "https://www.rtvonline.com/english/bangladesh/15812",
+        "confirmed_by_2_sources": "Y"
+    },
+    {
+        "node_id": "n21",
+        "date": "2024-07-31",
+        "day_label": "March for Justice",
+        "historical_event": "Students staged a nationwide 'March for Justice' at court premises, campuses and streets across the country, demanding accountability for the killings, arrests and disappearances of the previous weeks. That afternoon, Facebook and other social platforms were restored after a 13-day block.",
+        "source_1_name": "Dhaka Tribune",
+        "source_1_url": "https://www.dhakatribune.com/",
+        "source_2_name": "The Business Standard",
+        "source_2_url": "https://www.tbsnews.net/",
+        "confirmed_by_2_sources": "Y"
+    },
+    {
+        "node_id": "n22",
+        "date": "2024-08-01",
+        "day_label": "Coordinators Released, Jamaat Banned",
+        "historical_event": "Facing an expired 24-hour ultimatum from prominent civil-society figures, police released the six coordinators from Detective Branch custody, who immediately vowed to continue the movement. The same day, the government banned the Jamaat-e-Islami party and its student wing under anti-terrorism law, while records showed more than 3,000 students already arrested in Dhaka alone.",
+        "source_1_name": "Wikipedia — Timeline of July Revolution",
+        "source_1_url": "https://en.wikipedia.org/wiki/Timeline_of_July_Revolution_(Bangladesh)",
+        "source_2_name": "",
+        "source_2_url": "",
+        "confirmed_by_2_sources": "N"
+    },
+    {
+        "node_id": "n23",
+        "date": "2024-08-02",
+        "day_label": "Droho Jatra — Civil Society Joins Openly",
+        "historical_event": "Renewed protests, now openly demanding Hasina's resignation, brought deadly clashes to Uttara, Khulna, Sylhet and Habiganj, with one police officer beaten to death by a crowd in Khulna and a civilian killed in Habiganj. Academics, lawyers and other professionals joined demonstrators in the streets, and the government briefly restricted Facebook, WhatsApp and Telegram again.",
+        "source_1_name": "Wikipedia — Timeline of July Revolution",
+        "source_1_url": "https://en.wikipedia.org/wiki/Timeline_of_July_Revolution_(Bangladesh)",
+        "source_2_name": "",
+        "source_2_url": "",
+        "confirmed_by_2_sources": "N"
+    },
+    {
+        "node_id": "n24",
+        "date": "2024-08-03",
+        "day_label": "The Single-Point Demand",
+        "historical_event": "Hundreds of thousands gathered at Dhaka's Central Shaheed Minar as coordinator Nahid Islam addressed the crowd and announced a single-point demand: the immediate resignation of Prime Minister Sheikh Hasina and her cabinet. Organizers called for a nationwide non-cooperation movement to begin the following day.",
+        "source_1_name": "The Daily Star",
+        "source_1_url": "https://www.thedailystar.net/",
+        "source_2_name": "Wikipedia — Timeline of July Revolution",
+        "source_2_url": "https://en.wikipedia.org/wiki/Timeline_of_July_Revolution_(Bangladesh)",
+        "confirmed_by_2_sources": "Y"
+    },
+    {
+        "node_id": "n25",
+        "date": "2024-08-04",
+        "day_label": "Non-Cooperation Movement — The Deadliest Day",
+        "historical_event": "The All-Out Non-Cooperation Movement triggered the single deadliest day of the uprising, with roughly 91 people killed nationwide, including 14 police officers, as protesters and security forces clashed and police stations came under attack. The government cut internet access again and declared an indefinite nationwide curfew from 6pm.",
+        "source_1_name": "OHCHR Fact-Finding Report",
+        "source_1_url": "https://unipd-centrodirittiumani.it/fftb-hr-violations-bd.pdf",
+        "source_2_name": "Wikipedia — Timeline of July Revolution",
+        "source_2_url": "https://en.wikipedia.org/wiki/Timeline_of_July_Revolution_(Bangladesh)",
+        "confirmed_by_2_sources": "Y"
+    },
+    {
+        "node_id": "n26",
+        "date": "2024-08-05",
+        "day_label": "March to Dhaka and Hasina's Resignation",
+        "historical_event": "Hundreds of thousands broke curfew and marched into central Dhaka in the 'Long March to Dhaka' as army barricades came down. Sheikh Hasina resigned and fled by helicopter to India, ending her fifteen-year rule, and the Army Chief announced on television that an interim government would be formed.",
+        "source_1_name": "Reuters",
+        "source_1_url": "https://www.reuters.com/world/asia-pacific/hasina-resigns-flees-country/",
+        "source_2_name": "Wikipedia — Resignation of Sheikh Hasina",
+        "source_2_url": "https://en.wikipedia.org/wiki/Resignation_of_Sheikh_Hasina",
+        "confirmed_by_2_sources": "Y"
     }
 ]
