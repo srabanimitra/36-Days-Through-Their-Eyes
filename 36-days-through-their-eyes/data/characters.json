@@ -1,26 +1,432 @@
-[
-  {
-    "id": "student",
-    "name": "The Student",
-    "icon": "GraduationCap",
-    "tagline": "Dhaka University, final year",
-    "description": "Years of preparing for civil service exams collide with a verdict that reinstates the quotas she thought were gone. What starts as a campus petition becomes a choice she can't take back.",
-    "chaptersAvailable": [0, 1, 2, 3, 4, 5]
+{
+  "0": {
+    "date": "June 5, 2024",
+    "dayLabel": "The Verdict",
+    "student": {
+      "type": "compressed",
+      "narrative": "You're scrolling through the news between exam revisions when the headline hits your group chat: the High Court has reinstated the old quota system. Three years of preparing for a fair shot at a government job suddenly feel worthless.",
+      "continueLabel": "Keep reading the news",
+      "reveal": "The High Court's ruling that day reinstated the 30% job quota for freedom fighters' descendants, reversing a 2018 policy. Within hours, students began organizing at Dhaka University."
+    },
+    "journalist": {
+      "type": "decision",
+      "narrative": "The court verdict comes through the wire just after lunch, and your editor wants a reaction piece by evening. You head toward campus, half-expecting a quiet quote-gathering assignment — but the mood in the courtyard is already sharper than that.",
+      "choices": [
+        { "text": "Stay past your deadline to capture the students' reaction live", "label": "Stay for the story" },
+        { "text": "File the safe version your editor asked for and head back", "label": "File and go" }
+      ],
+      "reveal": "Coverage of the quota reinstatement ran the same evening in outlets like The Daily Star, marking the first public reporting on what would grow into a nationwide movement."
+    },
+    "rickshaw-puller": {
+      "type": "compressed",
+      "narrative": "You hear the news secondhand, from a passenger arguing about it on his phone during a ride. It doesn't mean much to you yet — court rulings rarely change your route or your fare.",
+      "continueLabel": "Finish the shift",
+      "reveal": "For most working-class residents, the June 5th ruling was distant news at first — its real disruption to daily life wouldn't arrive until the blockades of early July."
+    }
   },
-  {
-    "id": "journalist",
-    "name": "The Journalist",
-    "icon": "Camera",
-    "tagline": "Field reporter, Dhaka",
-    "description": "Her job is to be where the story is — even when that means standing between a lens and a line of riot police. Every day asks the same question: how close is too close?",
-    "chaptersAvailable": [0, 1, 2, 3, 4, 5]
+  "1": {
+    "date": "July 1, 2024",
+    "dayLabel": "The Movement Forms",
+    "student": {
+      "type": "decision",
+      "narrative": "Posters have gone up overnight declaring class and exam boycotts under a new banner: the Anti-Discrimination Student Movement. Your midterm is in three days, and half your classmates are already gathering at the gate.",
+      "choices": [
+        { "text": "Skip the scheduled midterm to join the boycott", "label": "Join the boycott" },
+        { "text": "Attend the exam and watch the movement from a distance", "label": "Attend the exam" }
+      ],
+      "reveal": "On July 1st, students launched organized protests nationwide under the Anti-Discrimination Student Movement banner, issuing a four-point demand and declaring class and exam boycotts across public universities."
+    },
+    "journalist": {
+      "type": "decision",
+      "narrative": "What started as scattered campus grumbling has a name now, and a four-point demand typed up and photocopied by hand. Your newsroom wants to know if this is a real movement or a passing flare-up.",
+      "choices": [
+        { "text": "Interview the student organizers directly for a feature", "label": "Interview organizers" },
+        { "text": "Wait a few days to see if the momentum holds", "label": "Wait and observe" }
+      ],
+      "reveal": "International outlets including Reuters reported on the formal launch of the Anti-Discrimination Student Movement on July 1st, describing organized boycotts and demonstrations spreading across public universities."
+    },
+    "rickshaw-puller": {
+      "type": "compressed",
+      "narrative": "A few more students than usual cluster near the gate this morning, chanting something rehearsed. Traffic's still normal for now, so you keep circling for fares.",
+      "continueLabel": "Continue your route",
+      "reveal": "The movement's formal launch on July 1st hadn't yet disrupted transport routes — that disruption began a week later with the nationwide blockades."
+    }
   },
-  {
-    "id": "rickshaw-puller",
-    "name": "The Rickshaw-puller",
-    "icon": "Bike",
-    "tagline": "Mirpur, daily wage",
-    "description": "The blockades that make the news are the roads he depends on to feed his family. As the city shuts down around him, every day is a choice between safety and a day's earnings.",
-    "chaptersAvailable": [0, 1, 2, 3, 4, 5]
+  "2": {
+    "date": "July 7, 2024",
+    "dayLabel": "The Bangla Blockade",
+    "student": {
+      "type": "compressed",
+      "narrative": "The road outside your dormitory is completely blocked by sit-ins — no rickshaws, no buses, nothing moving. It's exactly the disruption the movement wanted, and you can feel the city noticing.",
+      "continueLabel": "Join the sit-in",
+      "reveal": "On July 7th, student demonstrators launched the nationwide 'Bangla Blockade,' shutting down major intersections, roads, and rail transport across the country for several hours."
+    },
+    "journalist": {
+      "type": "decision",
+      "narrative": "Every major intersection you pass is jammed with sitting students and honking traffic. This is the first time the movement has visibly stopped the city rather than just gathered in it.",
+      "choices": [
+        { "text": "Cover the blockade from the middle of the busiest junction", "label": "Report from the center" },
+        { "text": "Interview stranded commuters about the disruption instead", "label": "Cover the public reaction" }
+      ],
+      "reveal": "The Bangla Blockade brought inter-district road and rail communication to a standstill, as reported by The Daily Star, marking the movement's shift from campus protest to nationwide disruption."
+    },
+    "rickshaw-puller": {
+      "type": "decision",
+      "narrative": "Every intersection you'd normally cross is packed with sitting students. Your usual fares have dried up completely, and the back alleys are the only way through — if they're even safe today.",
+      "choices": [
+        { "text": "Push through the risky back alleys to find passengers", "label": "Take the back alleys" },
+        { "text": "Go home early with no earnings rather than risk it", "label": "Go home empty-handed" }
+      ],
+      "reveal": "The blockade sharply reduced daily earnings for transport workers like rickshaw-pullers, whose livelihoods depended on the very roads the protest deliberately shut down."
+    }
+  },
+  "3": {
+    "date": "July 10, 2024",
+    "dayLabel": "A Temporary Freeze",
+    "student": {
+      "type": "compressed",
+      "narrative": "News spreads that the Supreme Court has frozen the quota ruling for four weeks. It sounds like a win on paper, but nobody in the movement is ready to call it one.",
+      "continueLabel": "Keep watching for what comes next",
+      "reveal": "The Appellate Division issued a four-week status quo order on July 10th, temporarily freezing the quota restoration — but students continued the movement, arguing a judicial freeze wasn't a permanent fix."
+    },
+    "journalist": {
+      "type": "compressed",
+      "narrative": "You file a short update on the court's status quo order, expecting the story to quiet down for a while. The students you spoke to yesterday don't sound like they're planning to stop.",
+      "continueLabel": "File the update",
+      "reveal": "Despite the temporary judicial freeze reported on July 10th, protesting students refused to end their movement, demanding permanent legislative reform instead."
+    },
+    "rickshaw-puller": {
+      "type": "compressed",
+      "narrative": "Word of the court's temporary order passes through the tea stalls, but the roads are still clearer than last week. You take the calm while it lasts.",
+      "continueLabel": "Keep working today's routes",
+      "reveal": "The brief judicial pause on July 10th offered only a short window of normalcy before the movement escalated further in the following days."
+    }
+  },
+  "4": {
+    "date": "July 14, 2024",
+    "dayLabel": "The Razakar Remark",
+    "student": {
+      "type": "decision",
+      "narrative": "The Prime Minister's press conference plays on someone's laptop in the common room, and the word lands like a slap — comparing protesting students to collaborators. Within an hour your dormitory corridor is full of voices, someone banging a plate like a drum.",
+      "choices": [
+        { "text": "Go down and join the midnight slogans in the quad", "label": "Join the protest" },
+        { "text": "Watch from the window, unsure if this is too far", "label": "Stay back" }
+      ],
+      "reveal": "Prime Minister Sheikh Hasina questioned during a press briefing whether job benefits should go to freedom fighters' descendants or to 'Razakars.' The remark triggered spontaneous midnight rallies at Dhaka University, with students reclaiming the term in protest."
+    },
+    "journalist": {
+      "type": "decision",
+      "narrative": "You're transcribing the press conference when the remark stops you mid-sentence. By the time you reach the university, it's well past midnight and the quad is packed with chanting students.",
+      "choices": [
+        { "text": "Push through the crowd for close footage of the chants", "label": "Get close" },
+        { "text": "Film from the edge, staying ready to leave fast", "label": "Keep distance" }
+      ],
+      "reveal": "The Prime Minister's remark and the students' overnight response were widely reported the next morning, marking a turning point where the quota debate became a broader confrontation over dignity and loyalty."
+    },
+    "rickshaw-puller": {
+      "type": "compressed",
+      "narrative": "You're parked near the university gate for a late fare when the shouting starts — hundreds of students pouring out past midnight, chanting something you don't fully catch.",
+      "continueLabel": "Watch from a distance",
+      "reveal": "The midnight protests of July 14th spread by word of mouth faster than most residents realized in the moment — many nearby only understood the scale of it by the next morning."
+    }
+  },
+  "5": {
+    "date": "July 15, 2024",
+    "dayLabel": "Campus Under Attack",
+    "student": {
+      "type": "decision",
+      "narrative": "Armed men in helmets move through the campus grounds, and it's clear within minutes that the police aren't going to stop them. You duck behind a building with two others, one of them bleeding from the head.",
+      "choices": [
+        { "text": "Help carry the injured to safety despite the risk", "label": "Help the injured" },
+        { "text": "Get yourself somewhere safe first", "label": "Save yourself" }
+      ],
+      "reveal": "On July 15th, activists from the ruling party's student wing attacked protesters at Dhaka University with sticks, rods, and firearms, injuring more than 300 students, according to the OHCHR Fact-Finding Report."
+    },
+    "journalist": {
+      "type": "decision",
+      "narrative": "Field reporters around you are already dodging both police and armed party activists, trying to stream footage before anyone stops them. The choice is simple but ugly: get closer, or get safe.",
+      "choices": [
+        { "text": "Stay near the violence to capture raw footage", "label": "Capture the footage" },
+        { "text": "Fall back to safety and report secondhand", "label": "Fall back to safety" }
+      ],
+      "reveal": "Journalists covering the July 15th campus attack faced direct threats from both political activists and law enforcement while attempting to document the violence in real time."
+    },
+    "rickshaw-puller": {
+      "type": "compressed",
+      "narrative": "Passengers are scarce and scared today — the streets near the campus have turned violent, and rumors of serious injuries are spreading rider to rider.",
+      "continueLabel": "Avoid the area today",
+      "reveal": "The July 15th campus violence sent shockwaves through surrounding neighborhoods, with hospitals nearby quickly overwhelmed by injured students."
+    }
+  },
+  "6": {
+    "date": "July 16, 2024",
+    "dayLabel": "Abu Sayed",
+    "student": {
+      "type": "decision",
+      "narrative": "By evening, a name is on everyone's lips — a student shot dead in Rangpur with his arms spread open, unarmed, in front of a crowd. Grief turns into something harder in your chest by the time the sun sets.",
+      "choices": [
+        { "text": "Let the anger push you further into the movement", "label": "Turn grief into resolve" },
+        { "text": "Pull back, frightened by how real the danger has become", "label": "Step back, afraid" }
+      ],
+      "reveal": "Police shot and killed unarmed student coordinator Abu Sayed at point-blank range in Rangpur on July 16th. Footage of his death went viral, escalating the movement into a full mass uprising as six people were killed nationwide that day."
+    },
+    "journalist": {
+      "type": "decision",
+      "narrative": "Your phone won't stop buzzing with footage from Rangpur — a student standing with his arms out, then falling. Your editor wants it verified and filed within the hour.",
+      "choices": [
+        { "text": "Verify the Rangpur footage and rush it to print", "label": "Verify and publish" },
+        { "text": "Wait for a second confirmed source before running anything", "label": "Wait to confirm" }
+      ],
+      "reveal": "Video of Abu Sayed's killing spread nationally within hours and was independently documented by organizations including Amnesty International, which reported unlawful use of lethal force against unarmed students."
+    },
+    "rickshaw-puller": {
+      "type": "compressed",
+      "narrative": "The news of the killing in Rangpur reaches you through a huddle of men at the tea stall, all speaking in low, angry voices. Something has shifted in the city's mood tonight.",
+      "continueLabel": "Head home before dark",
+      "reveal": "By July 16th, six people had been killed nationwide as clashes spread beyond university campuses into surrounding neighborhoods and everyday life."
+    }
+  },
+  "7": {
+    "date": "July 17, 2024",
+    "dayLabel": "Eviction",
+    "student": {
+      "type": "decision",
+      "narrative": "Police move through the dormitory giving everyone an hour to pack. Tear gas hangs faintly in the hallway air as you try to decide what to grab and what to leave behind.",
+      "choices": [
+        { "text": "Try to leave campus and find a way home before curfew", "label": "Try to get home" },
+        { "text": "Stay with a friend nearby and wait it out", "label": "Shelter in place" }
+      ],
+      "reveal": "On July 17th, the government ordered all universities and schools closed indefinitely, and police forcibly evicted dormitories overnight using tear gas and stun grenades, even as the Prime Minister offered public condolences."
+    },
+    "journalist": {
+      "type": "compressed",
+      "narrative": "You watch students stream out of the halls carrying whatever they could grab in an hour. The government's condolence statement plays on a television nearby, oddly calm against the scene in front of you.",
+      "continueLabel": "Document the evacuation",
+      "reveal": "The forced dormitory evictions on July 17th were widely covered by outlets including Prothom Alo, highlighting the gap between official statements and the reality on the ground."
+    },
+    "rickshaw-puller": {
+      "type": "compressed",
+      "narrative": "Dozens of anxious students crowd the roadside outside the halls tonight, all trying to get somewhere safer. You could make good money tonight, if the streets stay calm long enough.",
+      "continueLabel": "Offer rides to stranded students",
+      "reveal": "The sudden dormitory evacuations on July 17th created a surge of displaced students needing transport home, even as tensions in the city continued to rise."
+    }
+  },
+  "8": {
+    "date": "July 18, 2024",
+    "dayLabel": "The Shutdown",
+    "student": {
+      "type": "compressed",
+      "narrative": "The call for a 'Complete Shutdown' spreads fast, and by evening the streets around your temporary shelter are full of fires and running crowds. Then, suddenly, your phone signal disappears entirely.",
+      "continueLabel": "Try to reach your family before the signal drops",
+      "reveal": "Protesters called for a nationwide 'Complete Shutdown' on July 18th, leading to heavy clashes and fires at the state television headquarters. That evening, the government imposed a total shutdown of mobile and home internet nationwide. Among those killed that day was Sheikh Ashabul Yamin, a MIST computer science student shot near Savar bus stand — footage of his body being dragged from a police vehicle afterward shocked the nation."
+    },
+    "journalist": {
+      "type": "decision",
+      "narrative": "The moment the internet drops, your newsroom goes dark too — no way to send footage, no way to confirm casualty numbers. You have raw material from the street, but no way to get it anywhere that matters.",
+      "choices": [
+        { "text": "Physically carry your footage to the newsroom yourself", "label": "Deliver it in person" },
+        { "text": "Hold onto everything and wait for connectivity to return", "label": "Wait it out" }
+      ],
+      "reveal": "The nationwide internet shutdown beginning July 18th cut off most digital reporting. That same day, engineer Jahiduzzaman Tanvin, an IUT alumnus, was killed in Uttara while distributing supplies to protect protesters from tear gas — one of the deaths that took days to fully confirm and report once connectivity was cut."
+    },
+    "rickshaw-puller": {
+      "type": "decision",
+      "narrative": "Street battles intensify around the main roads tonight, and anyone caught outside risks stray bullets or tear gas. But there's no food money saved up, and staying home means going hungry.",
+      "choices": [
+        { "text": "Risk the streets tonight to earn what you can", "label": "Risk it for income" },
+        { "text": "Stay home and accept the lost earnings", "label": "Stay home safe" }
+      ],
+      "reveal": "Street clashes intensified nationwide on July 18th, exposing anyone outside — including transport workers still trying to earn a living — to direct danger. Two of the day's deaths, engineer Jahiduzzaman Tanvin and MIST student Sheikh Ashabul Yamin, were later documented in detail, becoming two of the movement's most widely recognized martyrs."
+    }
+  },
+  "9": {
+    "date": "July 19, 2024",
+    "dayLabel": "Shoot at Sight",
+    "student": {
+      "type": "decision",
+      "narrative": "Gunfire echoes from a few streets over, and the newly announced curfew means anyone caught outside after midnight risks being shot on sight. But you don't know if your family even knows you're alive.",
+      "choices": [
+        { "text": "Risk moving before the curfew fully takes hold", "label": "Try to reach family" },
+        { "text": "Stay hidden and wait for the violence to pass", "label": "Stay hidden" }
+      ],
+      "reveal": "Massive bloodshed occurred across Dhaka on July 19th as police and paramilitary forces fired live ammunition into crowds. The government declared a nationwide curfew with shoot-at-sight orders and deployed the military."
+    },
+    "journalist": {
+      "type": "compressed",
+      "narrative": "You watch the death toll numbers rise through scattered, unreliable reports — no internet to verify anything properly. It's the most dangerous day yet, and you can barely confirm what's real.",
+      "continueLabel": "Try to piece together what happened",
+      "reveal": "The OHCHR Fact-Finding Report later documented that July 19th saw some of the deadliest single-day violence of the uprising, concentrated in areas like Jatrabari, Rampura, and Uttara."
+    },
+    "rickshaw-puller": {
+      "type": "decision",
+      "narrative": "The curfew and shoot-at-sight orders make stepping outside genuinely life-threatening. Food at home is already running low, and there's no way to know how long this will last.",
+      "choices": [
+        { "text": "Sneak out through side streets for essential supplies", "label": "Risk a supply run" },
+        { "text": "Stay inside no matter what, and ration what's left", "label": "Stay inside and ration" }
+      ],
+      "reveal": "The July 19th curfew and shoot-at-sight orders halted nearly all casual outdoor labor, creating urgent food and income insecurity for daily-wage workers across the city."
+    }
+  },
+  "10": {
+    "date": "July 20, 2024",
+    "dayLabel": "Night Raids",
+    "student": {
+      "type": "compressed",
+      "narrative": "Military patrols move through the empty, curfew-locked streets outside your window. Somewhere nearby, you hear rumors that one of the movement's coordinators has vanished without a trace.",
+      "continueLabel": "Stay indoors and wait",
+      "reveal": "On July 20th, military troops patrolled deserted Dhaka streets under strict curfew, while law enforcement conducted night raids and mass arrests targeting movement coordinators."
+    },
+    "journalist": {
+      "type": "decision",
+      "narrative": "Rumors reach you that a central coordinator was taken from a friend's house overnight, tortured, and later dropped on a roadside. Confirming it means navigating military checkpoints most reporters are avoiding entirely.",
+      "choices": [
+        { "text": "Push forward to verify and report the abduction", "label": "Investigate the story" },
+        { "text": "Hold back until it's safer to confirm details", "label": "Wait for safety" }
+      ],
+      "reveal": "Central movement coordinator Nahid Islam was abducted on July 20th, tortured in unknown custody, and later dropped on a roadside — an event that drew significant domestic and international attention."
+    },
+    "rickshaw-puller": {
+      "type": "compressed",
+      "narrative": "The streets are eerily silent under curfew except for the occasional military patrol vehicle. You keep well away from anywhere soldiers are stationed.",
+      "continueLabel": "Wait for curfew to lift",
+      "reveal": "The strict curfew and heavy military presence on July 20th brought ordinary street life, including transport work, to a near-total standstill."
+    }
+  },
+  "11": {
+    "date": "July 21, 2024",
+    "dayLabel": "A Partial Concession",
+    "student": {
+      "type": "decision",
+      "narrative": "News breaks that the Supreme Court has slashed the quota down to just 7 percent — nearly everything the movement originally demanded. But after everything that's happened this past week, a court ruling doesn't feel like enough anymore.",
+      "choices": [
+        { "text": "Keep protesting, now demanding accountability for the deaths", "label": "Demand accountability" },
+        { "text": "Consider stepping back now that the core demand is met", "label": "Consider stepping back" }
+      ],
+      "reveal": "On July 21st, the Supreme Court scaled back government job quotas to 7%, leaving 93% for merit-based selection. Student groups declared the concession insufficient, demanding accountability for the state's violent crackdown."
+    },
+    "journalist": {
+      "type": "compressed",
+      "narrative": "You file a report on the court's ruling, but the students you interview don't sound relieved — they sound angrier than before.",
+      "continueLabel": "File the story",
+      "reveal": "Al Jazeera and other outlets reported that the July 21st quota reduction, while a major legal concession, failed to satisfy protesters given the scale of violence already inflicted."
+    },
+    "rickshaw-puller": {
+      "type": "compressed",
+      "narrative": "Word passes around that the quota's been cut way down. It doesn't change your day much — the streets are still tense, and fares are still unpredictable.",
+      "continueLabel": "Continue the day's work",
+      "reveal": "Despite the legal concession on July 21st, daily life for working residents remained disrupted as the underlying unrest continued."
+    }
+  },
+  "12": {
+    "date": "July 26, 2024",
+    "dayLabel": "Taken From the Hospital",
+    "student": {
+      "type": "compressed",
+      "narrative": "News spreads that hospitalized movement coordinators were pulled straight out of their hospital beds by plainclothes officers. Even a hospital bed doesn't feel safe anymore.",
+      "continueLabel": "Keep your head down",
+      "reveal": "On July 26th, Detective Branch police forcibly removed three hospitalized, injured student coordinators — Nahid Islam, Asif Mahmud, and Abu Baker Majumder — into custody, triggering widespread outcry."
+    },
+    "journalist": {
+      "type": "decision",
+      "narrative": "Confirming that hospitalized coordinators were taken into custody by plainclothes officers puts you in a difficult editorial spot — cover it plainly, and risk retaliation; soften it, and fail the story.",
+      "choices": [
+        { "text": "Report the abduction plainly, risks included", "label": "Report it directly" },
+        { "text": "Frame the story more cautiously to avoid retaliation", "label": "Report it cautiously" }
+      ],
+      "reveal": "The July 26th hospital abductions were reported by outlets including bdnews24.com, drawing international and domestic criticism over the state's use of illegal detention tactics against injured protest leaders."
+    },
+    "rickshaw-puller": {
+      "type": "compressed",
+      "narrative": "The story of coordinators taken from their hospital beds spreads through whispers at the stand today. It's hard to feel safe anywhere, even for someone just trying to earn a living.",
+      "continueLabel": "Keep working carefully",
+      "reveal": "The events of July 26th deepened public distrust in state institutions, a sentiment that extended well beyond the student movement itself."
+    }
+  },
+  "13": {
+    "date": "August 3, 2024",
+    "dayLabel": "One Point",
+    "student": {
+      "type": "decision",
+      "narrative": "Central Shaheed Minar is packed shoulder to shoulder by the time you arrive, more people than you've ever seen gathered in one place. When the announcement comes — one single demand, nothing less than the government's resignation — the crowd's roar swallows every doubt you had left.",
+      "choices": [
+        { "text": "Push to the front and add your voice to the chant", "label": "Move to the front" },
+        { "text": "Stay near the edges where it's safer to leave quickly", "label": "Stay near the edge" }
+      ],
+      "reveal": "On August 3rd, hundreds of thousands gathered at Dhaka's Central Shaheed Minar, where student coordinators formally announced the single-point demand: the resignation of Prime Minister Sheikh Hasina and her cabinet."
+    },
+    "journalist": {
+      "type": "decision",
+      "narrative": "You've covered rallies before, but nothing at this scale — the crowd stretches further than your lens can frame. When the single-point demand is announced, you realize this is no longer a story about quotas at all.",
+      "choices": [
+        { "text": "Climb somewhere higher to capture the size of the crowd", "label": "Capture the scale" },
+        { "text": "Stay at ground level, interviewing people directly", "label": "Get personal accounts" }
+      ],
+      "reveal": "The announcement at Shaheed Minar was widely covered as the moment the movement's demand shifted from quota reform to an explicit call for the head of government to step down."
+    },
+    "rickshaw-puller": {
+      "type": "decision",
+      "narrative": "The roads toward Shaheed Minar are choked with people on foot, far too many to carry anyone through by rickshaw today. You could turn back for easier fares elsewhere, or fold your pedals down and join the walking crowd yourself.",
+      "choices": [
+        { "text": "Park the rickshaw and go see the gathering on foot", "label": "Join on foot" },
+        { "text": "Head to quieter streets to find paying passengers", "label": "Find other fares" }
+      ],
+      "reveal": "The scale of the August 3rd gathering was such that normal traffic, including rickshaw routes throughout central Dhaka, was effectively suspended for the day."
+    }
+  },
+  "14": {
+    "date": "August 4, 2024",
+    "dayLabel": "The Deadliest Day",
+    "student": {
+      "type": "decision",
+      "narrative": "The Non-Cooperation Movement begins today, and by nightfall the death toll is unlike anything you've seen so far. Every part of you says this is too dangerous, and every part of you says turning back now would betray everyone already lost.",
+      "choices": [
+        { "text": "Join the non-cooperation actions despite the danger", "label": "Join the movement" },
+        { "text": "Retreat to safety and wait out today's violence", "label": "Retreat to safety" }
+      ],
+      "reveal": "The All-Out Non-Cooperation Movement began on August 4th, triggering severe nationwide violence between supporters, police, and protesters. Nearly 100 people were killed that single day — the deadliest of the entire uprising, per the OHCHR Fact-Finding Report."
+    },
+    "journalist": {
+      "type": "compressed",
+      "narrative": "The casualty count climbing through the day is the worst you've had to report since this began. Every phone call to a hospital source brings a higher number than the last.",
+      "continueLabel": "Keep documenting the toll",
+      "reveal": "August 4th saw the highest single-day death toll of the uprising, as street violence peaked nationwide during the Non-Cooperation Movement's opening day."
+    },
+    "rickshaw-puller": {
+      "type": "decision",
+      "narrative": "Injured people are being carried through the streets faster than anyone can help them, and there's a real need for anyone with wheels to move them to safety. It's dangerous, but the alternative is watching people bleed out untreated.",
+      "choices": [
+        { "text": "Use the rickshaw to ferry the injured to medical help", "label": "Help transport the injured" },
+        { "text": "Get yourself and your rickshaw off the street entirely", "label": "Get off the street" }
+      ],
+      "reveal": "As casualties surged on August 4th, ordinary transport workers including rickshaw-pullers took on informal frontline roles ferrying the injured to hospitals amid the chaos."
+    }
+  },
+  "15": {
+    "date": "August 5, 2024",
+    "dayLabel": "36 July",
+    "student": {
+      "type": "decision",
+      "narrative": "The curfew doesn't matter anymore — everyone is already walking, a human tide moving toward the Prime Minister's residence. Somewhere in the crowd, a phone held above someone's head announces it: she's gone.",
+      "choices": [
+        { "text": "Move with the crowd into the palace grounds", "label": "Enter the grounds" },
+        { "text": "Stay back in the street to take in what just happened", "label": "Stay in the street" }
+      ],
+      "reveal": "On August 5th, hundreds of thousands broke curfew and marched into central Dhaka. Sheikh Hasina resigned and fled by helicopter to India that day, ending her 15-year tenure as jubilant crowds entered the Ganabhaban palace grounds."
+    },
+    "journalist": {
+      "type": "decision",
+      "narrative": "There's no way to plan coverage for a moment like this — the story is happening in every direction at once. You have to choose where to point the camera as history closes one chapter in front of you.",
+      "choices": [
+        { "text": "Follow the crowd into the palace to document it firsthand", "label": "Follow the crowd" },
+        { "text": "Stay outside and gather reactions from the streets", "label": "Cover the streets" }
+      ],
+      "reveal": "Reuters and other outlets reported extensive scenes on August 5th as crowds entered the Ganabhaban palace following Hasina's resignation, marking the uprising's culmination after 36 days."
+    },
+    "rickshaw-puller": {
+      "type": "compressed",
+      "narrative": "For the first time in weeks, the streets are full of people who aren't afraid. Strangers are hugging, someone's climbed onto your rickshaw seat just to see over the crowd.",
+      "continueLabel": "Join the celebration",
+      "reveal": "Widespread celebrations broke out across Dhaka on August 5th following news of Hasina's resignation, with residents from all walks of life, including transport workers, taking part in spontaneous celebration."
+    }
   }
-]
+}
