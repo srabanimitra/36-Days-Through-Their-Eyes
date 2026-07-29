@@ -66,7 +66,7 @@ export default function Prologue() {
               }}
             >
               <div
-                className="flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center"
+                className="shrink-0 w-9 h-9 rounded-full flex items-center justify-center"
                 style={{ backgroundColor: "var(--color-bg-secondary)" }}
               >
                 <p.icon className="w-4 h-4" style={{ color: "var(--color-accent)" }} strokeWidth={1.75} />
@@ -86,8 +86,8 @@ export default function Prologue() {
           className="font-display italic text-lg text-center mb-9 px-4"
           style={{ color: "var(--color-text-secondary)" }}
         >
-          "The goal isn't to invent an alternate history — it's to make a
-          well-documented one easier to feel and remember."
+          &quot;The goal isn&apos;t to invent an alternate history — it&apos;s to make a
+          well-documented one easier to feel and remember.&quot;
         </motion.blockquote>
 
         <motion.div {...fadeUp(0.48)} className="flex flex-col sm:flex-row gap-3 justify-between items-center">
