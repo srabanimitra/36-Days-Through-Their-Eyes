@@ -1,16 +1,26 @@
 [
-    {
-        "id": "student",
-        "name": "Student",
-        "icon": "GraduationCap",
-        "description": "A public university student caught between fear and conviction.",
-        "chaptersAvailable": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5
-        ]
-    }
+  {
+    "id": "student",
+    "name": "The Student",
+    "icon": "GraduationCap",
+    "tagline": "Dhaka University, final year",
+    "description": "Years of preparing for civil service exams collide with a verdict that reinstates the quotas she thought were gone. What starts as a campus petition becomes a choice she can't take back.",
+    "chaptersAvailable": [0, 1, 2, 3, 4, 5]
+  },
+  {
+    "id": "journalist",
+    "name": "The Journalist",
+    "icon": "Camera",
+    "tagline": "Field reporter, Dhaka",
+    "description": "Her job is to be where the story is — even when that means standing between a lens and a line of riot police. Every day asks the same question: how close is too close?",
+    "chaptersAvailable": [0, 1, 2, 3, 4, 5]
+  },
+  {
+    "id": "rickshaw-puller",
+    "name": "The Rickshaw-puller",
+    "icon": "Bike",
+    "tagline": "Mirpur, daily wage",
+    "description": "The blockades that make the news are the roads he depends on to feed his family. As the city shuts down around him, every day is a choice between safety and a day's earnings.",
+    "chaptersAvailable": [0, 1, 2, 3, 4, 5]
+  }
 ]
