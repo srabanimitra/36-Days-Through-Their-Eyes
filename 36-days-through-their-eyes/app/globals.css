@@ -13,7 +13,7 @@
   /* Buttons */
   --color-btn-primary: #1F1F1F;
   --color-btn-primary-hover: #111111;
-  --color-btn-secondary-hover: #EFE7D8;
+  --color-btn-secondary-hover: #F3E6E6;
 
   /* Accents */
   --color-accent: #8A1C1C;
@@ -90,9 +90,10 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-body);
-  /* Faint archive-paper grain: pure CSS, no image asset needed */
+
   background-image:
-    radial-gradient(rgba(31, 31, 31, 0.035) 1px, transparent 1px);
+    radial-gradient(rgba(31,31,31,.035) 1px, transparent 1px);
+
   background-size: 3px 3px;
 }
 
@@ -107,10 +108,125 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    transition-duration: .01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* ===========================
+   Loading Screen
+=========================== */
+
+.loading-screen{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  background:var(--color-bg);
+
+  overflow:hidden;
+}
+
+.loading-overlay{
+  position:absolute;
+  inset:0;
+
+  background:
+    radial-gradient(rgba(0,0,0,.04) 1px, transparent 1px);
+
+  background-size:3px 3px;
+
+  pointer-events:none;
+}
+
+.loading-content{
+  position:relative;
+  z-index:2;
+
+  text-align:center;
+
+  animation:loadingAppear 1.2s ease;
+}
+
+.loading-title{
+  font-family:var(--font-cormorant);
+  font-size:clamp(3rem,8vw,5rem);
+  font-weight:700;
+  line-height:1;
+  letter-spacing:.02em;
+}
+
+.loading-subtitle{
+  margin-top:12px;
+
+  font-family:var(--font-libre);
+
+  text-transform:uppercase;
+  letter-spacing:.35rem;
+
+  color:var(--color-accent);
+
+  font-size:.9rem;
+}
+
+.loading-quote{
+  margin-top:48px;
+
+  font-family:var(--font-inter);
+
+  color:var(--color-text-secondary);
+
+  font-style:italic;
+
+  line-height:1.8;
+
+  font-size:.95rem;
+}
+
+.fade-out{
+  animation:fadeOut .8s forwards;
+}
+
+@keyframes loadingAppear{
+  from{
+    opacity:0;
+    transform:translateY(12px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+@keyframes fadeOut{
+  to{
+    opacity:0;
+    visibility:hidden;
+  }
+}
+
+/* Mobile */
+
+@media (max-width:640px){
+
+  .loading-subtitle{
+    letter-spacing:.2rem;
+    font-size:.75rem;
+  }
+
+  .loading-quote{
+    margin-top:36px;
+    font-size:.9rem;
+    padding:0 20px;
+  }
+
 }
