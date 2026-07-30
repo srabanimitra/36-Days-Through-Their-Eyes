@@ -1,15 +1,105 @@
 [
-    {
-        "id": "abu-sayed",
-        "name": "Abu Sayed",
-        "age": null,
-        "occupation": "Student",
-        "university": null,
-        "photo": "/memory-wall/abu-sayed.jpg",
-        "story": "Short, sourced account here.",
-        "unlockedAfterChapter": 5,
-        "sources": [
-            "source-010"
-        ]
-    }
+  {
+    "id": "abu-sayed",
+    "name": "Abu Sayed",
+    "age": 25,
+    "occupation": "Student, English Department",
+    "university": "Begum Rokeya University, Rangpur",
+    "photo": "/memory-wall/abu-sayed.jpg",
+    "story": "On July 16, 2024, as police advanced on protesters outside Begum Rokeya University, Abu Sayed stood his ground and spread his arms wide rather than retreat. Officers fired at him from close range; he died of his injuries shortly after. Video of his final stand spread nationwide within hours and is widely credited as the moment the quota-reform protests turned into a mass uprising.",
+    "sourceLinks": [
+      { "name": "Wikipedia — Killing of Abu Sayed", "url": "https://en.wikipedia.org/wiki/Killing_of_Abu_Sayed" },
+      { "name": "Amnesty International", "url": "https://www.amnesty.org/en/latest/news/2024/07/what-is-happening-at-the-quota-reform-protests-in-bangladesh/" },
+      { "name": "The Daily Star", "url": "https://www.thedailystar.net/news/bangladesh/news/student-rangpur-killed-during-clash-between-police-and-protesters-3658216" }
+    ]
+  },
+  {
+    "id": "mir-mugdho",
+    "name": "Mir Mahfuzur Rahman Mugdho",
+    "age": 25,
+    "occupation": "Freelancer, MBA student",
+    "university": "Bangladesh University of Professionals",
+    "photo": "/memory-wall/mir-mugdho.jpg",
+    "story": "On July 18, 2024, Mugdho went out to distribute free water and biscuits to protesters in Dhaka's Uttara area. Minutes before he was shot dead, a video captured him asking passersby, \"Paani lagbe? Paani?\" (\"Need water? Water?\"). The footage went viral, and his death is remembered as one of the turning points that widened the movement beyond students.",
+    "sourceLinks": [
+      { "name": "Wikipedia — Mir Mugdho", "url": "https://en.wikipedia.org/wiki/Mir_Mugdho" },
+      { "name": "CNN", "url": "https://www.cnn.com/2024/08/12/asia/bangladesh-quota-protests-student-martyr-intl-hnk-dst" }
+    ]
+  },
+  {
+    "id": "shaykh-yamin",
+    "name": "Shaykh Aashhabul Yamin",
+    "age": null,
+    "occupation": "Student, Computer Science",
+    "university": "Military Institute of Science and Technology (MIST)",
+    "photo": "/memory-wall/shaykh-yamin.jpg",
+    "story": "Yamin was struck by police gunfire during a protest near a bus station in Savar, outside Dhaka. Footage later verified by Amnesty International and the Centre for Information Resilience showed police dragging his unconscious body off an armoured vehicle and dropping it in the street, with none of the twelve officers present attempting to render aid. He died of his injuries shortly after.",
+    "sourceLinks": [
+      { "name": "Amnesty International", "url": "https://www.amnesty.org/en/latest/news/2024/07/bangladesh-further-video-and-photographic-analysis-confirm-police-unlawfully-used-lethal-and-less-lethal-weapons-against-protesters/" },
+      { "name": "Centre for Information Resilience", "url": "https://www.info-res.org/cir/articles/investigating-police-violence-in-the-deadly-bangladesh-quota-protests/" }
+    ]
+  },
+  {
+    "id": "jahiduzzaman-tanvin",
+    "name": "Jahiduzzaman Tanvin",
+    "age": 24,
+    "occupation": "Engineer",
+    "university": null,
+    "photo": "/memory-wall/jahiduzzaman-tanvin.jpg",
+    "story": "Tanvin, an engineer known among friends for building drones and working on innovative projects, left home on July 18, 2024 to withdraw money from the bank, telling his mother he'd be back in half an hour. He never returned. \"I demand that my son's name, along with all the martyrs, be etched in golden letters in history,\" his mother later told The Daily Star.",
+    "sourceLinks": [
+      { "name": "The Daily Star", "url": "https://www.thedailystar.net/news/bangladesh/news/july-uprising-families-victims-want-recognition-justice-3770831" }
+    ]
+  },
+  {
+    "id": "golam-nafiz",
+    "name": "Md. Golam Nafiz",
+    "age": 16,
+    "occupation": "Student",
+    "university": "Banani Bidyaniketan School and College",
+    "photo": "/memory-wall/golam-nafiz.jpg",
+    "story": "Nafiz was killed by gunshot wounds in Dhaka's Farmgate area on August 4, 2024, during the Non-Cooperation Movement — the final, deadliest phase of the uprising, just one day before Sheikh Hasina's resignation.",
+    "sourceLinks": [
+      { "name": "Wikipedia — Killing of Golam Nafiz", "url": "https://en.wikipedia.org/wiki/Killing_of_Golam_Nafiz" }
+    ]
+  },
+  {
+    "id": "farhan-faiyaaz",
+    "name": "Farhan Faiyaaz",
+    "age": 17,
+    "occupation": "Class XI (HSC) Student",
+    "university": "Dhaka Residential Model College",
+    "photo": "/memory-wall/farhan-faiyaaz.jpg",
+    "story": "Farhan was killed by pellet wounds during clashes between protesters and ruling-party activists in Dhaka's Dhanmondi area on July 18, 2024. His aunt's Facebook post, \"They killed my child Farhan Faiyaaz — he was not even 18 years old,\" spread nationwide within hours. He was remembered by his teachers as quiet and never once in an altercation with a classmate. A street near his college and a sports ground in Dhaka were later renamed in his honor.",
+    "sourceLinks": [
+      { "name": "The Daily Star", "url": "https://www.thedailystar.net/news/news/farhan-faiyaaz-life-we-will-remember-3660411" },
+      { "name": "Wikipedia — July massacre", "url": "https://en.wikipedia.org/wiki/July_massacre" }
+    ]
+  },
+  {
+    "id": "wasim-akram",
+    "name": "Md. Wasim Akram",
+    "age": 22,
+    "occupation": "Student, Sociology",
+    "university": "Chattogram College",
+    "photo": "/memory-wall/wasim-akram.jpg",
+    "story": "Wasim was shot during a student rally in Chattogram's Muradpur area on July 16, 2024 and died at Chattogram Medical College Hospital that evening. He is remembered locally as the first martyr of the July movement in Chattogram; his death sparked further clashes and protests across the city.",
+    "sourceLinks": [
+      { "name": "The Daily Star", "url": "https://www.thedailystar.net/news/bangladesh/news/wasim-akram-first-martyr-july-movement-ctg-be-remembered-tomorrow-3940141" },
+      { "name": "Fortify Rights", "url": "https://www.fortifyrights.org/bgd-inv-2024-11-12/" }
+    ]
+  },
+  {
+    "id": "riya-gope",
+    "name": "Riya Gope",
+    "age": 6,
+    "occupation": "First-grade student",
+    "university": null,
+    "photo": "/memory-wall/riya-gope.jpg",
+    "story": "Riya was not a protester. On July 19, 2024, as clashes broke out in the streets of Narayanganj, she was playing on the rooftop of her family's home when a stray bullet struck her in the head, in her father's arms as he tried to carry her to safety. She died five days later at Dhaka Medical College Hospital — the youngest known casualty of the uprising, and a reminder that its cost reached far beyond the protest lines.",
+    "sourceLinks": [
+      { "name": "The Daily Star", "url": "https://www.thedailystar.net/news/bangladesh/lives-we-lost/news/6-year-old-shot-while-her-fathers-arms-passes-away-3665151" },
+      { "name": "The Business Standard", "url": "https://www.tbsnews.net/bangladesh/riya-turned-six-silence-childs-life-lost-nations-chaos-1166251" }
+    ]
+  }
 ]
