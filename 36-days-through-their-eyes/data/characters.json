@@ -2,25 +2,22 @@
   {
     "id": "student",
     "name": "The Student",
-    "icon": "GraduationCap",
-    "tagline": "Dhaka University, final year",
-    "description": "Years of preparing for civil service exams collide with a verdict that reinstates the quotas she thought were gone. What starts as a campus petition becomes a choice she can't take back.",
-    "chaptersAvailable": [0, 1, 2, 3, 4, 5]
+    "tagline": "Dhaka University",
+    "description": "Three years of studying for a fair shot at a government job, now caught between the movement and the risk of losing everything.",
+    "icon": "GraduationCap"
   },
   {
     "id": "journalist",
     "name": "The Journalist",
-    "icon": "Camera",
-    "tagline": "Field reporter, Dhaka",
-    "description": "Her job is to be where the story is — even when that means standing between a lens and a line of riot police. Every day asks the same question: how close is too close?",
-    "chaptersAvailable": [0, 1, 2, 3, 4, 5]
+    "tagline": "Field Reporter",
+    "description": "Chasing the story as it unfolds, weighing the pull of getting closer against the cost of staying safe.",
+    "icon": "Camera"
   },
   {
     "id": "rickshaw-puller",
-    "name": "The Rickshaw-puller",
-    "icon": "Bike",
-    "tagline": "Mirpur, daily wage",
-    "description": "The blockades that make the news are the roads he depends on to feed his family. As the city shuts down around him, every day is a choice between safety and a day's earnings.",
-    "chaptersAvailable": [0, 1, 2, 3, 4, 5]
+    "name": "The Rickshaw-Puller",
+    "tagline": "Daily Wage Earner",
+    "description": "Every blockade and curfew is a missed fare. Survival and the movement don't always pull in the same direction.",
+    "icon": "Bike"
   }
 ]
