@@ -1,11 +1,12 @@
 // app/timeline/page.js
 "use client";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useInView } from "framer-motion";
 import { ArrowLeft, ExternalLink, ChevronDown } from "lucide-react";
 import timelineData from "@/data/timeline.json";
 import { useReducedMotion } from "@/lib/useReducedMotion";
+import HumanCostStrip from "@/components/HumanCostStrip";
 
 function formatDateLabel(dateStr) {
     // Handles both single dates ("2024-06-05") and ranges ("2024-06-06/2024-06-30")
@@ -19,8 +20,20 @@ function formatDateLabel(dateStr) {
     return new Date(dateStr + "T00:00:00").toLocaleDateString("en-US", opts);
 }
 
-function TimelineEntry({ node, index, reduced }) {
+function TimelineEntry({ node, reduced, onActive }) {
     const [open, setOpen] = useState(false);
+
+    // Separate, always-live observer (viewport "once" below is only for the
+    // fade-in animation) — this is what drives the HumanCostStrip as the
+    // player scrolls, firing whenever this entry crosses the middle band
+    // of the screen, in either direction.
+    const activeRef = useRef(null);
+    const isActive = useInView(activeRef, { margin: "-45% 0px -45% 0px" });
+
+    useEffect(() => {
+        if (isActive) onActive(node.date);
+    }, [isActive, node.date, onActive]);
+
     const sources = [
         node.source_1_name && { name: node.source_1_name, url: node.source_1_url },
         node.source_2_name && { name: node.source_2_name, url: node.source_2_url },
@@ -28,6 +41,7 @@ function TimelineEntry({ node, index, reduced }) {
 
     return (
         <motion.div
+            ref={activeRef}
             initial={reduced ? {} : { opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
@@ -43,8 +57,8 @@ function TimelineEntry({ node, index, reduced }) {
             {/* Node dot */}
             <div
                 aria-hidden="true"
-                className="absolute left-[7px] sm:left-[13px] top-1.5 w-2.5 h-2.5 rounded-full"
-                style={{ backgroundColor: "var(--color-timeline-current)" }}
+                className="absolute left-[7px] sm:left-[13px] top-1.5 w-2.5 h-2.5 rounded-full transition-colors duration-300"
+                style={{ backgroundColor: isActive ? "var(--color-timeline-current)" : "var(--color-timeline-upcoming)" }}
             />
 
             <span
@@ -115,42 +129,51 @@ function TimelineEntry({ node, index, reduced }) {
 
 export default function TimelinePage() {
     const reduced = useReducedMotion();
+    const [activeDate, setActiveDate] = useState(timelineData[0].date);
 
     return (
-        <main className="min-h-screen px-6 py-16 sm:py-20">
-            <div className="max-w-3xl mx-auto">
-                <Link
-                    href="/"
-                    className="inline-flex items-center gap-2 mb-10 font-heading text-sm tracking-wide"
-                    style={{ color: "var(--color-text-secondary)" }}
-                >
-                    <ArrowLeft className="w-4 h-4" />
-                    Back
-                </Link>
+        <main className="min-h-screen pb-16">
+            <div className="px-6 pt-16 sm:pt-20">
+                <div className="max-w-3xl mx-auto">
+                    <Link
+                        href="/"
+                        className="inline-flex items-center gap-2 mb-10 font-heading text-sm tracking-wide"
+                        style={{ color: "var(--color-text-secondary)" }}
+                    >
+                        <ArrowLeft className="w-4 h-4" />
+                        Back
+                    </Link>
 
-                <p
-                    className="font-heading text-[11px] tracking-[0.18em] uppercase mb-3"
-                    style={{ color: "var(--color-accent)" }}
-                >
-                    June 5 – August 5, 2024
-                </p>
-                <h1 className="font-display text-4xl sm:text-5xl font-semibold mb-4 leading-tight">
-                    The Timeline
-                </h1>
-                <p
-                    className="font-body text-sm sm:text-base max-w-xl mb-16"
-                    style={{ color: "var(--color-text-secondary)" }}
-                >
-                    Every date below is real, sourced, and unchangeable. This is the
-                    fixed spine the narrative is built around — the same history,
-                    however differently each character lived through it.
-                </p>
+                    <p
+                        className="font-heading text-[11px] tracking-[0.18em] uppercase mb-3"
+                        style={{ color: "var(--color-accent)" }}
+                    >
+                        June 5 – August 5, 2024
+                    </p>
+                    <h1 className="font-display text-4xl sm:text-5xl font-semibold mb-4 leading-tight">
+                        The Timeline
+                    </h1>
+                    <p
+                        className="font-body text-sm sm:text-base max-w-xl mb-16"
+                        style={{ color: "var(--color-text-secondary)" }}
+                    >
+                        Every date below is real, sourced, and unchangeable. This is the
+                        fixed spine the narrative is built around — the same history,
+                        however differently each character lived through it.
+                    </p>
 
-                <div>
-                    {timelineData.map((node, i) => (
-                        <TimelineEntry key={node.node_id} node={node} index={i} reduced={reduced} />
-                    ))}
+                    <div>
+                        {timelineData.map((node) => (
+                            <TimelineEntry key={node.node_id} node={node} reduced={reduced} onActive={setActiveDate} />
+                        ))}
+                    </div>
                 </div>
+            </div>
+
+            {/* Sticky human cost strip — steps forward as the player scrolls
+          through real, reported checkpoints. Doesn't fake daily precision. */}
+            <div className="sticky bottom-0 z-10">
+                <HumanCostStrip currentDate={activeDate} />
             </div>
         </main>
     );

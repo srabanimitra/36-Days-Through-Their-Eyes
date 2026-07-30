@@ -1,0 +1,93 @@
+[
+    {
+        "node_id": "n01",
+        "date": "2024-06-05",
+        "killed": 0,
+        "injured": 0,
+        "arrested": 0,
+        "label": "The movement begins peacefully",
+        "source_name": null,
+        "source_url": null
+    },
+    {
+        "node_id": "n08",
+        "date": "2024-07-15",
+        "killed": 0,
+        "injured": 300,
+        "arrested": 0,
+        "label": "300+ injured in the Chhatra League attacks at Dhaka University alone",
+        "source_name": "OHCHR Fact-Finding Report",
+        "source_url": "https://unipd-centrodirittiumani.it/fftb-hr-violations-bd.pdf"
+    },
+    {
+        "node_id": "n09",
+        "date": "2024-07-16",
+        "killed": 6,
+        "injured": 300,
+        "arrested": 0,
+        "label": "6 killed nationwide on a single day, including Abu Sayed",
+        "source_name": "The Daily Star",
+        "source_url": "https://www.thedailystar.net/news/bangladesh/news/student-rangpur-killed-during-clash-between-police-and-protesters-3658216"
+    },
+    {
+        "node_id": "n12",
+        "date": "2024-07-19",
+        "killed": 75,
+        "injured": 300,
+        "arrested": 0,
+        "label": "Death toll climbs to at least 75 as curfew and shoot-at-sight orders are declared",
+        "source_name": "Anadolu Agency",
+        "source_url": "https://www.aa.com.tr/en/asia-pacific/curfew-imposed-military-deployed-as-death-toll-in-student-protests-climbs-to-75-in-bangladesh/3280318"
+    },
+    {
+        "node_id": "n15",
+        "date": "2024-07-24",
+        "killed": 200,
+        "injured": 300,
+        "arrested": 0,
+        "label": "Nearly 200 dead as violence temporarily tapers off",
+        "source_name": "Associated Press",
+        "source_url": "https://apnews.com/article/bangladesh-campus-violence-hasina-bc513b6d68cf5b94cfd898f3c7f153d2"
+    },
+    {
+        "node_id": "n19",
+        "date": "2024-07-29",
+        "killed": 200,
+        "injured": 300,
+        "arrested": 2822,
+        "label": "2,822 arrested in Dhaka alone as protests resume",
+        "source_name": "Jamuna Television",
+        "source_url": "https://www.jagonews24.com/en/national/news/75779"
+    },
+    {
+        "node_id": "n22",
+        "date": "2024-08-01",
+        "killed": 200,
+        "injured": 300,
+        "arrested": 3011,
+        "label": "3,011 students arrested by Dhaka Metropolitan Police alone since the crackdown began",
+        "source_name": "Wikipedia — Timeline of July Revolution",
+        "source_url": "https://en.wikipedia.org/wiki/Timeline_of_July_Revolution_(Bangladesh)"
+    },
+    {
+        "node_id": "n25",
+        "date": "2024-08-04",
+        "killed": 291,
+        "injured": 300,
+        "arrested": 3011,
+        "label": "The single deadliest day of the uprising: roughly 91 killed in 24 hours, including 14 police officers",
+        "source_name": "OHCHR Fact-Finding Report",
+        "source_url": "https://unipd-centrodirittiumani.it/fftb-hr-violations-bd.pdf"
+    },
+    {
+        "node_id": "n26",
+        "date": "2024-08-05",
+        "killed": 1400,
+        "injured": 20000,
+        "arrested": 3011,
+        "label": "Final estimates vary and are still disputed",
+        "note": "Bangladesh's own health ministry recorded 1,000+ deaths; the OHCHR fact-finding mission estimated 1,400+; the Students Against Discrimination platform put the toll at 1,581. More than 20,000 people were injured, some permanently.",
+        "source_name": "OHCHR / Wikipedia — July massacre",
+        "source_url": "https://en.wikipedia.org/wiki/July_massacre"
+    }
+]

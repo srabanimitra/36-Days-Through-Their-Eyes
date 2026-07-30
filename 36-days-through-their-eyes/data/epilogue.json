@@ -1,0 +1,34 @@
+[
+    {
+        "id": "government",
+        "topic": "Who Was Running the Country",
+        "then": "In the days after August 5, 2024, no elected government existed. Nobel laureate Muhammad Yunus was sworn in on August 8 to lead a caretaker interim administration, with no fixed date yet set for when Bangladesh would next go to the polls.",
+        "now": "That interim period lasted about eighteen months. Bangladesh held its first parliamentary election since the uprising on February 12, 2026; the Bangladesh Nationalist Party won a decisive majority, and its chairman, Tarique Rahman, was sworn in as prime minister on February 17, 2026.",
+        "source_name": "Al Jazeera",
+        "source_url": "https://www.aljazeera.com/news/2026/2/13/bangladeshs-bnp-claims-landslide-win-in-first-election-since-2024-uprising"
+    },
+    {
+        "id": "accountability",
+        "topic": "Accountability for the Crackdown",
+        "then": "Sheikh Hasina had fled to India by helicopter, and it was unclear whether she would ever face formal proceedings over the killings during July and August.",
+        "now": "On November 17, 2025, Bangladesh's International Crimes Tribunal found Hasina guilty in absentia of crimes against humanity tied to the crackdown and sentenced her to death; her former home minister received the same sentence. Hasina, still in India, denounced the verdict as politically motivated, and India has not extradited her. The UN human rights office called the ruling significant for victims but said it should not have carried a death sentence, and some legal observers have separately raised due-process concerns about how the tribunal was reconstituted.",
+        "source_name": "NPR",
+        "source_url": "https://www.npr.org/2025/11/17/g-s1-98112/bangladesh-sheikh-hasina-verdict"
+    },
+    {
+        "id": "reform",
+        "topic": "The Reform Promise",
+        "then": "Protesters' demands went beyond Hasina's resignation, toward a broader call for structural change to how the country was governed.",
+        "now": "Alongside the February 2026 election, voters also cast ballots in a referendum on an 84-point reform package known as the July National Charter, an attempt to turn some of the movement's demands into constitutional change.",
+        "source_name": "Business Standard",
+        "source_url": "https://www.business-standard.com/world-news/bangladesh-elections-2026-results-tarique-rahman-bnp-wins-majority-seats-126021300451_1.html"
+    },
+    {
+        "id": "politics",
+        "topic": "The Political Landscape",
+        "then": "For over a decade, Bangladeshi politics had been dominated by a rivalry between two parties: the Awami League and the BNP.",
+        "now": "The Awami League was barred from taking part in the 2026 election under the interim government. Jamaat-e-Islami, banned for years under Hasina, was legalized again and became the second-largest party in the new parliament. A new student-founded party born directly out of the protest movement also entered the political field for the first time.",
+        "source_name": "Chatham House",
+        "source_url": "https://www.chathamhouse.org/2025/11/sheikh-hasina-verdict-and-bangladeshs-upcoming-referendum-signal-transitional-moment-south"
+    }
+]
