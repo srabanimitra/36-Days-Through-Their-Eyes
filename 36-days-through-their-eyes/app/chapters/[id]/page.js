@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter, useParams } from "next/navigation";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft, ChevronDown, ScrollText } from "lucide-react";
+import { ArrowLeft, ChevronDown, ScrollText, SplitSquareVertical } from "lucide-react";
 import chapters from "@/data/chapters.json";
 import { useCharacter } from "@/lib/character";
 import { useReducedMotion } from "@/lib/useReducedMotion";
@@ -14,6 +14,13 @@ const CHAPTER_IDS = Object.keys(chapters)
   .sort((a, b) => a - b);
 const TOTAL_CHAPTERS = CHAPTER_IDS.length;
 const LAST_CHAPTER_INDEX = CHAPTER_IDS[TOTAL_CHAPTERS - 1];
+
+// Needed for the choice banner's background color below.
+function tensionColor(chapterIndex) {
+  const t = TOTAL_CHAPTERS > 1 ? chapterIndex / (TOTAL_CHAPTERS - 1) : 1;
+  const pct = Math.round(20 + t * 70);
+  return `color-mix(in srgb, var(--color-accent) ${pct}%, var(--color-timeline-upcoming))`;
+}
 
 export default function ChapterPage() {
   const router = useRouter();
@@ -202,8 +209,20 @@ function ChapterScene({ chapter, chapterIndex }) {
         </AnimatePresence>
       </motion.div>
 
-      <motion.div {...fadeUp(0.22)} className="w-full max-w-2xl mt-4">
-        <div className="flex flex-col gap-3">
+      <motion.div {...fadeUp(0.22)} className="w-full max-w-2xl mt-6">
+        <div
+          className="flex items-center gap-2 px-5 py-2.5 rounded-t-card"
+          style={{ backgroundColor: tensionColor(chapterIndex) }}
+        >
+          <SplitSquareVertical className="w-4 h-4" style={{ color: "#FFFFFF" }} />
+          <p className="font-heading text-[11px] tracking-[0.22em] uppercase" style={{ color: "#FFFFFF" }}>
+            What do you do?
+          </p>
+        </div>
+        <div
+          className="flex flex-col gap-3 p-4 rounded-b-card border border-t-0"
+          style={{ backgroundColor: "var(--color-bg-secondary)", borderColor: "var(--color-border)" }}
+        >
           {chapter.choices.map((choice, i) => {
             const isSelected = selectedChoice === i;
             const isDimmed = selectedChoice !== null && !isSelected;
@@ -214,7 +233,7 @@ function ChapterScene({ chapter, chapterIndex }) {
                 disabled={selectedChoice !== null}
                 className="text-left rounded-card border px-5 py-4 font-body text-sm transition-all duration-300 cursor-pointer disabled:cursor-default"
                 style={{
-                  backgroundColor: isSelected ? "var(--color-choice-selected-bg)" : "var(--color-bg-secondary)",
+                  backgroundColor: isSelected ? "var(--color-choice-selected-bg)" : "var(--color-surface)",
                   borderColor: isSelected ? "var(--color-success)" : "var(--color-border)",
                   opacity: isDimmed ? 0.45 : 1,
                 }}
