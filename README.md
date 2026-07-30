@@ -23,7 +23,7 @@ Several strong archival and evidence-verification projects already exist for thi
 
 ## Try it
 
-- **Live Demo:** [add your Vercel URL here]
+- **Live Demo:** [https://36-days-through-their-eyes.vercel.app/]
 - **GitHub:** [github.com/srabanimitra/36-Days-Through-Their-Eyes](https://github.com/srabanimitra/36-Days-Through-Their-Eyes)
 - **Demo Video (3 min):** [add your YouTube/Drive unlisted link here]
 
