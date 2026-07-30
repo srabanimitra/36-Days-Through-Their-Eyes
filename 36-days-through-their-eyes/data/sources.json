@@ -1,15 +1,353 @@
 [
     {
         "id": "source-001",
-        "title": "Article title",
+        "title": "HC verdict restores 30% freedom-fighter quota",
+        "publisher": "The Daily Star",
+        "date": "2024-06-05",
+        "url": "https://www.thedailystar.net/news/bangladesh/justice/news/hc-verdict-quota",
+        "relatedDates": ["jun-05"],
+        "relatedPeople": []
+    },
+    {
+        "id": "source-002",
+        "title": "Timeline of the July Revolution",
+        "publisher": "Wikipedia",
+        "date": "2024-06-05",
+        "url": "https://en.wikipedia.org/wiki/Timeline_of_July_Revolution_(Bangladesh)",
+        "relatedDates": ["jun-05", "jun-06", "aug-01", "aug-02", "aug-03", "aug-04"],
+        "relatedPeople": ["nahid-islam", "sheikh-hasina"]
+    },
+    {
+        "id": "source-003",
+        "title": "Students protest to reinstate quota reform demands",
+        "publisher": "Reuters",
+        "date": "2024-07-01",
+        "url": "https://www.reuters.com/world/asia-pacific/students-protest-reinstate-2024-07-02/",
+        "relatedDates": ["jul-01"],
+        "relatedPeople": []
+    },
+    {
+        "id": "source-004",
+        "title": "July Uprising overview",
+        "publisher": "Wikipedia",
+        "date": "2024-07-01",
+        "url": "https://en.wikipedia.org/wiki/July_Uprising",
+        "relatedDates": ["jul-01"],
+        "relatedPeople": []
+    },
+    {
+        "id": "source-005",
+        "title": "Students block roads in Bangla Blockade",
+        "publisher": "The Daily Star",
+        "date": "2024-07-07",
+        "url": "https://www.thedailystar.net/news/bangladesh/blockade-students-block-roads",
+        "relatedDates": ["jul-07"],
+        "relatedPeople": []
+    },
+    {
+        "id": "source-006",
+        "title": "Students boycott classes, exams ahead of nationwide blockade",
+        "publisher": "The Business Standard",
+        "date": "2024-07-07",
+        "url": "https://www.tbsnews.net/bangladesh/education/quota-protest-students-boycott-class-exams-prepare-nationwide-bangla-blockade",
+        "relatedDates": ["jul-07"],
+        "relatedPeople": []
+    },
+    {
+        "id": "source-007",
+        "title": "Bangladesh news coverage",
+        "publisher": "Bdnews24.com",
+        "date": "2024-07-10",
+        "url": "https://bdnews24.com/bangladesh/",
+        "relatedDates": ["jul-10", "jul-26"],
+        "relatedPeople": ["nahid-islam", "asif-mahmud", "abu-baker-majumder"]
+    },
+    {
+        "id": "source-008",
+        "title": "Anti-quota activists gather at Dhaka University",
+        "publisher": "Dhaka Tribune",
+        "date": "2024-07-10",
+        "url": "https://www.dhakatribune.com/bangladesh/dhaka/351603/anti-quota-activists-gather-at-dhaka-university",
+        "relatedDates": ["jul-10"],
+        "relatedPeople": []
+    },
+    {
+        "id": "source-009",
+        "title": "Students again block Shahbagh over quota reform",
+        "publisher": "Dhaka Tribune",
+        "date": "2024-07-12",
+        "url": "https://www.dhakatribune.com/bangladesh/dhaka/351867/quota-reform-students-again-block-shahbagh",
+        "relatedDates": ["jul-12"],
+        "relatedPeople": []
+    },
+    {
+        "id": "source-010",
+        "title": "BBC News coverage of the quota protests",
+        "publisher": "BBC News",
+        "date": "2024-07-14",
+        "url": "https://www.bbc.com/news",
+        "relatedDates": ["jul-14"],
+        "relatedPeople": ["sheikh-hasina"]
+    },
+    {
+        "id": "source-011",
+        "title": "Hasina's 'Razakar' remark sparks midnight protest",
+        "publisher": "Prothom Alo",
+        "date": "2024-07-14",
+        "url": "https://www.prothomalo.com/bangladesh/cvkgobtzd5",
+        "relatedDates": ["jul-14"],
+        "relatedPeople": ["sheikh-hasina"]
+    },
+    {
+        "id": "source-012",
+        "title": "Fact-finding report on human rights violations",
+        "publisher": "OHCHR",
+        "date": "2024-07-15",
+        "url": "https://unipd-centrodirittiumani.it/fftb-hr-violations-bd.pdf",
+        "relatedDates": ["jul-15", "jul-19", "aug-04"],
+        "relatedPeople": []
+    },
+    {
+        "id": "source-013",
+        "title": "BCL unleashes fury on quota protesters",
         "publisher": "The Daily Star",
         "date": "2024-07-15",
-        "url": "https://...",
-        "relatedDates": [
-            "jun-05"
-        ],
-        "relatedPeople": [
-            "abu-sayed"
-        ]
+        "url": "https://www.thedailystar.net/news/bangladesh/crime-justice/news/bcl-unleashes-fury-quota-protesters-3657866",
+        "relatedDates": ["jul-15"],
+        "relatedPeople": []
+    },
+    {
+        "id": "source-014",
+        "title": "Amnesty International reporting on the crackdown",
+        "publisher": "Amnesty International",
+        "date": "2024-07-16",
+        "url": "https://www.amnesty.org/en/",
+        "relatedDates": ["jul-16"],
+        "relatedPeople": ["abu-sayed"]
+    },
+    {
+        "id": "source-015",
+        "title": "Student in Rangpur killed during clash with police",
+        "publisher": "The Daily Star",
+        "date": "2024-07-16",
+        "url": "https://www.thedailystar.net/news/bangladesh/news/student-rangpur-killed-during-clash-between-police-and-protesters-3658216",
+        "relatedDates": ["jul-16"],
+        "relatedPeople": ["abu-sayed"]
+    },
+    {
+        "id": "source-016",
+        "title": "Prothom Alo English coverage of dormitory evictions",
+        "publisher": "Prothom Alo",
+        "date": "2024-07-17",
+        "url": "https://en.prothomalo.com/",
+        "relatedDates": ["jul-17"],
+        "relatedPeople": ["sheikh-hasina"]
+    },
+    {
+        "id": "source-017",
+        "title": "Funeral prayer for slain students turns violent",
+        "publisher": "The Daily Ittefaq",
+        "date": "2024-07-17",
+        "url": "https://www.ittefaq.com.bd/693997",
+        "relatedDates": ["jul-17"],
+        "relatedPeople": ["sheikh-hasina"]
+    },
+    {
+        "id": "source-018",
+        "title": "Protesters call for 'Complete Shutdown'",
+        "publisher": "Reuters",
+        "date": "2024-07-18",
+        "url": "https://www.reuters.com/world/asia-pacific/protesters-call-complete-shutdown-2024-07-18/",
+        "relatedDates": ["jul-18"],
+        "relatedPeople": []
+    },
+    {
+        "id": "source-019",
+        "title": "State TV HQ set ablaze as death toll rises",
+        "publisher": "France 24",
+        "date": "2024-07-18",
+        "url": "https://www.france24.com/en/asia-pacific/20240718-state-tv-hq-set-ablaze-death-toll-rises-student-protests-roil-bangladesh",
+        "relatedDates": ["jul-18"],
+        "relatedPeople": []
+    },
+    {
+        "id": "source-020",
+        "title": "Curfew imposed, military deployed as death toll climbs",
+        "publisher": "Anadolu Agency",
+        "date": "2024-07-19",
+        "url": "https://www.aa.com.tr/en/asia-pacific/curfew-imposed-military-deployed-as-death-toll-in-student-protests-climbs-to-75-in-bangladesh/3280318",
+        "relatedDates": ["jul-19"],
+        "relatedPeople": []
+    },
+    {
+        "id": "source-021",
+        "title": "2024: Between fear and defiance",
+        "publisher": "The Daily Star",
+        "date": "2024-07-20",
+        "url": "https://www.thedailystar.net/news/bangladesh/2024-between-fear-and-defiance",
+        "relatedDates": ["jul-20"],
+        "relatedPeople": ["nahid-islam"]
+    },
+    {
+        "id": "source-022",
+        "title": "BBC Bengali report on coordinator's disappearance",
+        "publisher": "BBC Bengali",
+        "date": "2024-07-20",
+        "url": "https://www.bbc.com/bengali/articles/cne48jd942po",
+        "relatedDates": ["jul-20"],
+        "relatedPeople": ["nahid-islam"]
+    },
+    {
+        "id": "source-023",
+        "title": "What's behind Bangladesh's violent quota protests",
+        "publisher": "Al Jazeera",
+        "date": "2024-07-21",
+        "url": "https://www.aljazeera.com/news/2024/7/16/whats-behind-bangladeshs-violent-quota-protests",
+        "relatedDates": ["jul-21"],
+        "relatedPeople": []
+    },
+    {
+        "id": "source-024",
+        "title": "Students pause protest for 48 hours after quota cut",
+        "publisher": "The Times of India",
+        "date": "2024-07-21",
+        "url": "https://timesofindia.indiatimes.com/world/south-asia/bangladesh-quota-row-students-pause-protest-for-48-hour-demand-govt-to-lift-curfew/articleshow/111925041.cms",
+        "relatedDates": ["jul-21"],
+        "relatedPeople": []
+    },
+    {
+        "id": "source-025",
+        "title": "Bangladesh partially restores telecom services",
+        "publisher": "Reuters",
+        "date": "2024-07-24",
+        "url": "https://www.reuters.com/world/asia-pacific/bangladesh-partially-restores-telecommunication-services-protests-taper-off-2024-07-24/",
+        "relatedDates": ["jul-24"],
+        "relatedPeople": []
+    },
+    {
+        "id": "source-026",
+        "title": "Broadband returns as protests taper off",
+        "publisher": "Bdnews24.com",
+        "date": "2024-07-24",
+        "url": "https://bdnews24.com/bangladesh/a8f6d9dab5f0",
+        "relatedDates": ["jul-24"],
+        "relatedPeople": []
+    },
+    {
+        "id": "source-027",
+        "title": "Authorities detain student protest leaders in hospital",
+        "publisher": "Al Jazeera",
+        "date": "2024-07-26",
+        "url": "https://www.aljazeera.com/news/2024/7/27/bangladesh-authorities-detain-student-protest-leaders-in-hospital",
+        "relatedDates": ["jul-26"],
+        "relatedPeople": ["nahid-islam", "asif-mahmud", "abu-baker-majumder"]
+    },
+    {
+        "id": "source-028",
+        "title": "Sarjis, Hasnat taken into DB custody for 'security reasons'",
+        "publisher": "The Business Standard",
+        "date": "2024-07-27",
+        "url": "https://www.tbsnews.net/bangladesh/crime/now-quota-protest-coordinators-sarjis-hasnat-taken-db-custody-security-reasons",
+        "relatedDates": ["jul-27"],
+        "relatedPeople": ["sarjis-alam", "hasnat-abdullah"]
+    },
+    {
+        "id": "source-029",
+        "title": "Student group vows to resume protests if demands not met",
+        "publisher": "The Hindu",
+        "date": "2024-07-27",
+        "url": "https://www.thehindu.com/news/international/bangladesh-student-group-vows-to-resume-protests-if-demands-not-met/article68456310.ece",
+        "relatedDates": ["jul-27"],
+        "relatedPeople": ["sarjis-alam", "hasnat-abdullah"]
+    },
+    {
+        "id": "source-030",
+        "title": "Coordinators announce withdrawal from DB custody",
+        "publisher": "Prothom Alo",
+        "date": "2024-07-28",
+        "url": "https://en.prothomalo.com/bangladesh/1a5pu53bbq",
+        "relatedDates": ["jul-28"],
+        "relatedPeople": []
+    },
+    {
+        "id": "source-031",
+        "title": "Coverage of the forced withdrawal statement",
+        "publisher": "The Daily Observer",
+        "date": "2024-07-28",
+        "url": "https://www.observerbd.com/news.php?id=482527",
+        "relatedDates": ["jul-28"],
+        "relatedPeople": []
+    },
+    {
+        "id": "source-032",
+        "title": "Protests resume, mass arrests continue",
+        "publisher": "Jamuna Television",
+        "date": "2024-07-29",
+        "url": "https://www.jagonews24.com/en/national/news/75779",
+        "relatedDates": ["jul-29"],
+        "relatedPeople": []
+    },
+    {
+        "id": "source-033",
+        "title": "Bangladesh protests resume after ultimatum ignored",
+        "publisher": "CNA",
+        "date": "2024-07-29",
+        "url": "https://www.channelnewsasia.com/asia/bangladesh-protests-resume-after-ultimatum-ignored-curfew-sheikh-hasina-4511596",
+        "relatedDates": ["jul-29"],
+        "relatedPeople": ["sheikh-hasina"]
+    },
+    {
+        "id": "source-034",
+        "title": "National mourning day marked amid dispute over framing",
+        "publisher": "Jago News 24",
+        "date": "2024-07-30",
+        "url": "https://www.jagonews24.com/en/national/news/75805",
+        "relatedDates": ["jul-30"],
+        "relatedPeople": []
+    },
+    {
+        "id": "source-035",
+        "title": "Public rejects official mourning, turns profile photos red",
+        "publisher": "RTV",
+        "date": "2024-07-30",
+        "url": "https://www.rtvonline.com/english/bangladesh/15812",
+        "relatedDates": ["jul-30"],
+        "relatedPeople": []
+    },
+    {
+        "id": "source-036",
+        "title": "March for Justice held nationwide",
+        "publisher": "Dhaka Tribune",
+        "date": "2024-07-31",
+        "url": "https://www.dhakatribune.com/",
+        "relatedDates": ["jul-31"],
+        "relatedPeople": []
+    },
+    {
+        "id": "source-037",
+        "title": "Facebook restored after 13-day block",
+        "publisher": "The Business Standard",
+        "date": "2024-07-31",
+        "url": "https://www.tbsnews.net/",
+        "relatedDates": ["jul-31"],
+        "relatedPeople": []
+    },
+    {
+        "id": "source-038",
+        "title": "Hasina resigns, flees country",
+        "publisher": "Reuters",
+        "date": "2024-08-05",
+        "url": "https://www.reuters.com/world/asia-pacific/hasina-resigns-flees-country/",
+        "relatedDates": ["aug-05"],
+        "relatedPeople": ["sheikh-hasina"]
+    },
+    {
+        "id": "source-039",
+        "title": "Resignation of Sheikh Hasina",
+        "publisher": "Wikipedia",
+        "date": "2024-08-05",
+        "url": "https://en.wikipedia.org/wiki/Resignation_of_Sheikh_Hasina",
+        "relatedDates": ["aug-05"],
+        "relatedPeople": ["sheikh-hasina"]
     }
 ]
