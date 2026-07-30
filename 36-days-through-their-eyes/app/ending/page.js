@@ -1,6 +1,6 @@
 // app/ending/page.js
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import {
@@ -15,7 +15,9 @@ import {
 } from "lucide-react";
 import { useCharacter, clearCharacter } from "@/lib/character";
 import { useReducedMotion } from "@/lib/useReducedMotion";
+import { markCharacterCompleted, useCompletedCharacters } from "@/lib/completion";
 import ThenNowEpilogue from "@/components/ThenNowEpilogue";
+import Certificate from "@/components/Certificate";
 import charactersData from "@/data/characters.json";
 
 const ICONS = { GraduationCap, Camera, Bike };
@@ -25,7 +27,15 @@ export default function EndingPage() {
   const reduced = useReducedMotion();
   const characterId = useCharacter();
   const character = charactersData.find((c) => c.id === characterId);
+  const completed = useCompletedCharacters();
   const Icon = ICONS[character?.icon] ?? GraduationCap;
+
+  useEffect(() => {
+    if (characterId) markCharacterCompleted(characterId);
+  }, [characterId]);
+
+  const allComplete =
+    charactersData.length > 0 && completed.length >= charactersData.length;
 
   const fadeUp = (delay = 0) => ({
     initial: reduced ? {} : { opacity: 0, y: 16 },
@@ -90,6 +100,13 @@ export default function EndingPage() {
 
       {/* Then & Now */}
       <ThenNowEpilogue />
+
+      {/* Completion certificate — shown once every character has been completed */}
+      {allComplete && (
+        <section className="px-6 py-16">
+          <Certificate completed={completed} />
+        </section>
+      )}
 
       {/* Actions */}
       <section className="px-6 pb-24 text-center">

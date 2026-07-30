@@ -81,7 +81,7 @@ function TimelineEntry({ node, reduced, onActive }) {
             {/* Node dot */}
             <div
                 aria-hidden="true"
-                className="absolute left-[7px] sm:left-[13px] top-1.5 w-2.5 h-2.5 rounded-full transition-colors duration-300"
+                className="absolute left-1.75 sm:left-3.25 top-1.5 w-2.5 h-2.5 rounded-full transition-colors duration-300"
                 style={{
                     backgroundColor: isActive
                         ? "var(--color-timeline-current)"
