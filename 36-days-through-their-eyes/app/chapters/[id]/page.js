@@ -15,8 +15,15 @@ const CHAPTER_IDS = Object.keys(chapters)
 const TOTAL_CHAPTERS = CHAPTER_IDS.length;
 const LAST_CHAPTER_INDEX = CHAPTER_IDS[TOTAL_CHAPTERS - 1];
 
+// Real photos for the Historical Reality reveal, keyed by chapterIndex.
+// Not every chapter needs an entry -- chapters not listed here just render
+// the text-only archive card. `position` controls CSS object-position
+// (defaults to "center top" so faces/heads near the top of a photo don't
+// get cropped out by the fixed-height box) -- tweak per-photo if a
+// specific image still looks off. `credit` is only needed for
+// externally-sourced photos (Commons etc), not your own memory-wall photos.
 const REVEAL_PHOTOS = {
-  5: [{ src: "/timeline/july-15-gathering.jpg", name: "July 15" }],
+  5: [{ src: "/timeline/july-15-gathering.jpg", name: "July 15", position: "center 40%" }],
   6: [
     { src: "/memory-wall/abu-sayed.jpg", name: "Abu Sayed", position: "center 15%" },
     { src: "/memory-wall/wasim-akram.jpg", name: "Wasim Akram" },
@@ -24,10 +31,10 @@ const REVEAL_PHOTOS = {
   8: [
     { src: "/memory-wall/mir-mugdho.jpg", name: "Mir Mugdho" },
     { src: "/memory-wall/jahiduzzaman-tanvin.jpg", name: "Tanvin" },
-    { src: "/memory-wall/shaykh-yamin.jpg", name: "Sheikh Ashabul Yamin" },
+    { src: "/memory-wall/farhan-faiyaaz.jpg", name: "Farhan Faiyaaz" },
   ],
   13: [{ src: "/timeline/august-3-shaheed-minar.jpg", name: "August 3, Shaheed Minar" }],
-  15: [{ src: "/timeline/aug5-victory-march.jpg", name: "Victory march, August 5", credit: "CC BY-SA 4.0, Wikimedia Commons" }],
+  15: [{ src: "/timeline/aug5-victory-march.jpg", name: "Victory march, August 5", credit: "CC BY-SA 4.0, Wikimedia Commons", position: "center 42%" }],
 };
 
 // Needed for the choice banner's background color below.
@@ -135,7 +142,7 @@ function RevealPhoto({ photo }) {
         src={photo.src}
         alt={photo.name}
         onError={() => setBroken(true)}
-        className="w-full h-44 object-cover rounded-card border block"
+        className="w-full h-56 object-cover rounded-card border block"
         style={{
           borderColor: "var(--color-border)",
           objectPosition: photo.position || "center top",
