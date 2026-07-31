@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter, useParams } from "next/navigation";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft, ChevronDown, ScrollText, SplitSquareVertical } from "lucide-react";
+import { ArrowLeft, ScrollText, SplitSquareVertical, ArrowRight } from "lucide-react";
 import chapters from "@/data/chapters.json";
 import { useCharacter } from "@/lib/character";
 import { useReducedMotion } from "@/lib/useReducedMotion";
@@ -14,6 +14,21 @@ const CHAPTER_IDS = Object.keys(chapters)
   .sort((a, b) => a - b);
 const TOTAL_CHAPTERS = CHAPTER_IDS.length;
 const LAST_CHAPTER_INDEX = CHAPTER_IDS[TOTAL_CHAPTERS - 1];
+
+const REVEAL_PHOTOS = {
+  5: [{ src: "/timeline/july-15-gathering.jpg", name: "July 15" }],
+  6: [
+    { src: "/memory-wall/abu-sayed.jpg", name: "Abu Sayed", position: "center 15%" },
+    { src: "/memory-wall/wasim-akram.jpg", name: "Wasim Akram" },
+  ],
+  8: [
+    { src: "/memory-wall/mir-mugdho.jpg", name: "Mir Mugdho" },
+    { src: "/memory-wall/jahiduzzaman-tanvin.jpg", name: "Tanvin" },
+    { src: "/memory-wall/shaykh-yamin.jpg", name: "Sheikh Ashabul Yamin" },
+  ],
+  13: [{ src: "/timeline/august-3-shaheed-minar.jpg", name: "August 3, Shaheed Minar" }],
+  15: [{ src: "/timeline/aug5-victory-march.jpg", name: "Victory march, August 5", credit: "CC BY-SA 4.0, Wikimedia Commons" }],
+};
 
 // Needed for the choice banner's background color below.
 function tensionColor(chapterIndex) {
@@ -111,13 +126,40 @@ function ProgressBar({ chapterIndex, character }) {
   );
 }
 
+function RevealPhoto({ photo }) {
+  const [broken, setBroken] = useState(false);
+  if (broken) return null;
+  return (
+    <figure className="m-0">
+      <img
+        src={photo.src}
+        alt={photo.name}
+        onError={() => setBroken(true)}
+        className="w-full h-44 object-cover rounded-card border block"
+        style={{
+          borderColor: "var(--color-border)",
+          objectPosition: photo.position || "center top",
+        }}
+      />
+      <figcaption
+        className="font-body text-[11px] mt-1.5"
+        style={{ color: "var(--color-text-secondary)" }}
+      >
+        {photo.name}
+        {photo.credit ? ` — ${photo.credit}` : ""}
+      </figcaption>
+    </figure>
+  );
+}
+
 function ChapterScene({ chapter, chapterIndex }) {
   const router = useRouter();
   const reduced = useReducedMotion();
   const [selectedChoice, setSelectedChoice] = useState(null);
-  // Historical reality is shown by default now — no click required to see it.
-  // The toggle stays available for anyone who wants to collapse it out of the way.
-  const [revealOpen, setRevealOpen] = useState(true);
+  // Reveal is no longer shown by default -- it now appears as the
+  // *consequence* of picking a choice, not a spoiler sitting next to it.
+  const [revealShown, setRevealShown] = useState(false);
+  const photos = REVEAL_PHOTOS[chapterIndex];
 
   const fadeUp = (delay = 0) => ({
     initial: reduced ? {} : { opacity: 0, y: 14 },
@@ -128,14 +170,18 @@ function ChapterScene({ chapter, chapterIndex }) {
   function handleChoice(index) {
     if (selectedChoice !== null) return;
     setSelectedChoice(index);
-    const delay = reduced ? 150 : 650;
-    setTimeout(() => {
-      if (chapterIndex >= LAST_CHAPTER_INDEX) {
-        router.push("/ending");
-      } else {
-        router.push(`/chapters/${chapterIndex + 1}`);
-      }
-    }, delay);
+    // Small pause so the selected/dimmed state registers, then reveal
+    // what actually happened -- no more silent auto-redirect.
+    const delay = reduced ? 0 : 500;
+    setTimeout(() => setRevealShown(true), delay);
+  }
+
+  function handleContinue() {
+    if (chapterIndex >= LAST_CHAPTER_INDEX) {
+      router.push("/ending");
+    } else {
+      router.push(`/chapters/${chapterIndex + 1}`);
+    }
   }
 
   return (
@@ -161,55 +207,9 @@ function ChapterScene({ chapter, chapterIndex }) {
         </p>
       </motion.div>
 
-      {/* Historical Reality now sits right after the narrative and above the
-          choices, open by default — everyone sees the real history whether
-          or not they ever click anything. The toggle is just there for
-          anyone who wants to tuck it away while they read the scene again. */}
-      <motion.div {...fadeUp(0.14)} className="w-full max-w-2xl mt-4">
-        <button
-          onClick={() => setRevealOpen((v) => !v)}
-          className="w-full flex items-center justify-between gap-3 rounded-card border px-5 py-4 font-body text-sm cursor-pointer"
-          style={{ backgroundColor: "var(--color-bg-secondary)", borderColor: "var(--color-border)" }}
-        >
-          <span className="flex items-center gap-2">
-            <ScrollText className="w-4 h-4" style={{ color: "var(--color-accent)" }} />
-            <span
-              className="font-heading text-[11px] tracking-[0.16em] uppercase"
-              style={{ color: "var(--color-text)" }}
-            >
-              Historical Reality
-            </span>
-          </span>
-          <motion.span animate={{ rotate: revealOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
-            <ChevronDown className="w-4 h-4" style={{ color: "var(--color-text-secondary)" }} />
-          </motion.span>
-        </button>
-
-        <AnimatePresence initial={false}>
-          {revealOpen && (
-            <motion.div
-              initial={{ height: 0, opacity: 0 }}
-              animate={{ height: "auto", opacity: 1 }}
-              exit={{ height: 0, opacity: 0 }}
-              transition={{ duration: reduced ? 0 : 0.25, ease: "easeInOut" }}
-              className="overflow-hidden"
-            >
-              <div
-                className="rounded-card border px-5 py-4 mt-2 font-body text-sm leading-relaxed italic"
-                style={{
-                  backgroundColor: "var(--color-surface)",
-                  borderColor: "var(--color-border)",
-                  color: "var(--color-text-secondary)",
-                }}
-              >
-                {chapter.reveal}
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </motion.div>
-
-      <motion.div {...fadeUp(0.22)} className="w-full max-w-2xl mt-6">
+      {/* Choices come right after the narrative, with nothing else
+          in between -- the decision stands on its own. */}
+      <motion.div {...fadeUp(0.16)} className="w-full max-w-2xl mt-6">
         <div
           className="flex items-center gap-2 px-5 py-2.5 rounded-t-card"
           style={{ backgroundColor: tensionColor(chapterIndex) }}
@@ -256,6 +256,64 @@ function ChapterScene({ chapter, chapterIndex }) {
           })}
         </div>
       </motion.div>
+
+      {/* Historical Reality only appears after a choice is made -- framed
+          as consequence, not spoiler. Includes real photo(s) when sourced
+          for this chapter (see REVEAL_PHOTOS above). */}
+      <AnimatePresence>
+        {revealShown && (
+          <motion.div
+            initial={reduced ? {} : { opacity: 0, y: 14 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: reduced ? 0 : 0.45, ease: "easeOut" }}
+            className="w-full max-w-2xl mt-6"
+          >
+            <div
+              className="flex items-center gap-2 px-5 py-2.5 rounded-t-card"
+              style={{
+                backgroundColor: "var(--color-bg-secondary)",
+                borderTop: "1px solid var(--color-border)",
+                borderLeft: "1px solid var(--color-border)",
+                borderRight: "1px solid var(--color-border)",
+              }}
+            >
+              <ScrollText className="w-4 h-4" style={{ color: "var(--color-accent)" }} />
+              <p className="font-heading text-[11px] tracking-[0.22em] uppercase" style={{ color: "var(--color-text)" }}>
+                Here&apos;s what really happened
+              </p>
+            </div>
+
+            <div
+              className="rounded-b-card border border-t-0 px-5 py-5"
+              style={{ backgroundColor: "var(--color-surface)", borderColor: "var(--color-border)" }}
+            >
+              <p
+                className="font-body text-sm leading-relaxed italic mb-4"
+                style={{ color: "var(--color-text-secondary)" }}
+              >
+                {chapter.reveal}
+              </p>
+
+              {photos && photos.length > 0 && (
+                <div className={`grid gap-3 ${photos.length > 1 ? "grid-cols-3" : "grid-cols-1"}`}>
+                  {photos.map((photo) => (
+                    <RevealPhoto key={photo.src} photo={photo} />
+                  ))}
+                </div>
+              )}
+
+              <button
+                onClick={handleContinue}
+                className="mt-5 inline-flex items-center gap-2 px-6 py-2.5 rounded-card font-heading text-sm tracking-wide transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
+                style={{ backgroundColor: "var(--color-btn-primary)", color: "#fff" }}
+              >
+                Continue
+                <ArrowRight className="w-4 h-4" />
+              </button>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <motion.div {...fadeUp(0.3)} className="mt-10">
         <Link
