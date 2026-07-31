@@ -140,8 +140,8 @@ Full citations for individual events are shown in-app at the point where they're
 
 | Name | Responsibilities |
 |---|---|
-| [Name 1] | Application architecture, React development, narrative engine, deployment |
-| [Name 2] | Historical research, narrative writing, UI/UX, content integration |
+| Srabani Mitra | Application architecture, React development, narrative engine, deployment |
+| Twaseen Tabassum | Historical research, narrative writing, UI/UX, content integration |
 
 ## License
 
