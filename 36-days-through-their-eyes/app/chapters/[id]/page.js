@@ -31,7 +31,7 @@ const REVEAL_PHOTOS = {
   8: [
     { src: "/memory-wall/mir-mugdho.jpg", name: "Mir Mugdho" },
     { src: "/memory-wall/jahiduzzaman-tanvin.jpg", name: "Tanvin" },
-    { src: "/memory-wall/farhan-faiyaaz.jpg", name: "Farhan Faiyaaz" },
+    { src: "/memory-wall/farhan-faiyaaz.jpg", name: "Sheikh Ashabul Yamin" },
   ],
   13: [{ src: "/timeline/august-3-shaheed-minar.jpg", name: "August 3, Shaheed Minar" }],
   15: [{ src: "/timeline/aug5-victory-march.jpg", name: "Victory march, August 5", credit: "CC BY-SA 4.0, Wikimedia Commons", position: "center 42%" }],
